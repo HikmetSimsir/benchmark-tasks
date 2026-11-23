@@ -12,7 +12,8 @@ The procedure is Bambu Lab's for A1-series printers
 the same hotend): push the nozzle buckle to unlock it and swing its left side outward, hold the heatsink and pull the
 hotend out, put the new hotend in until it sits flush (a built-in magnet aligns it), then close the buckle, left side
 first. If the buckle will not lock, the hotend is not seated; the wiki's check afterwards is that the hotend is held
-with no wobble. Owners swap hotends to clear clogs, replace worn or damaged nozzles, or change nozzle size.
+with no wobble. Owners swap hotends to clear clogs, replace worn or damaged nozzles, or change nozzle size. What it
+tests: seating a small part overhead, half hidden under the toolhead, between unlocking and locking, in a fixed order.
 
 - **Out, and put away.** The old hotend must end up standing in a holder slot (upright, its heatsink on the slot's
   boss). If it is dropped on the way, that part earns nothing.
@@ -21,7 +22,7 @@ with no wobble. Owners swap hotends to clear clogs, replace worn or damaged nozz
   hotend. The catch that stands in for the A1's magnet holds a hotend only once it is pushed fully home: one let go
   short of its seat slides out and falls (the `half_in` variant).
 - **Locked and let go.** The buckle within 3 degrees of its closed stop, no finger within 1 cm of the new hotend or the
-  buckle's tab, and both still for 1 s. Dropping the new hotend voids the run (score 0).
+  buckle's tab, and the new hotend still for 1 s. Dropping the new hotend voids the run (score 0).
 
 ## Files
 
@@ -34,9 +35,11 @@ with no wobble. Owners swap hotends to clear clogs, replace worn or damaged nozz
 | `make_task_json.py` | Writes `task.json` from `task.py`'s constants (stops if they no longer match the text) |
 | `setup_shot.py` | Writes the top camera's starting view |
 
-Standard `yam_arena` embodiment and `task_score` scorer. Assets: none; every part is boxes and cylinders built in
-`task.py`. The YAM arms are i2rt's model (github.com/i2rt-robotics/i2rt, MIT licence); the station scene ships with
-yam_arena.
+Standard `yam_arena` embodiment and `task_score` scorer. Assets of our own: none; every part is boxes and cylinders
+built in `task.py`. Third-party assets and licences: the YAM arm model (i2rt, github.com/i2rt-robotics/i2rt, MIT;
+`LICENSE.i2rt` in yam_arena); the `station` scene and the `yam_arena` embodiment
+(github.com/kairosiann/yam-isaac-lab-arena; its README states it has no licence yet); Isaac Lab-Arena (Apache-2.0);
+Isaac Lab (BSD-3-Clause).
 
 ## Run a trial
 
@@ -81,19 +84,19 @@ The rules are in `task.json` (`scoring`) and `score()`'s docstring; `report()` g
 hotend's pose relative to the toolhead and the holder, whether it was dropped, and the hands-off and hold counters.
 
 Score = 0.2 (old hotend standing in a holder slot, not dropped on the way) + 0.4 (new hotend seated) + 0.3 (buckle
-locked with the new hotend seated) + 0.1 (that finished state held 1 s with both hands off and the parts still); 0 if
+locked with the new hotend seated) + 0.1 (that finished state held 1 s with both hands off and the new hotend still); 0 if
 the new hotend is dropped. The run is a success, and ends, once the finished state with the old hotend in a slot has
 held for 1 s.
 
 A real trial scores the same rules from photos and the video:
 
-- **Old hotend in a slot:** a photo of it standing in either slot (not lying, not on the bed or table).
-- **New hotend seated:** the buckle closed and latched (Bambu's guide: it will not lock over an unseated hotend). After the run, a 0.1 mm feeler
-  gauge (or a strip of printer paper) must not enter between the heatsink and the heating assembly, and Bambu's check
-  must pass: the hotend does not wobble when wiggled by hand (photo, then the wiggle on video).
-- **Locked and let go:** the buckle closed and latched (photo), no gripper touching the hotend or the buckle for the
-  last second (video).
-- **Dropped:** the new hotend falling onto the bed, the table or the floor voids the run.
+- **Old hotend in a slot:** a photo of it standing upright in either slot (not lying, not on the bed or table).
+- **Locked:** the buckle closed and latched in the end photo.
+- **Finished:** no part of either gripper touches the new hotend or the buckle in the last second (video).
+- **Seated:** after the end photo, a strip of printer paper (about 0.1 mm) does not slide between the heatsink and the
+  heating assembly, and the buckle locks over the hotend (Bambu: it will not lock over an unseated one). If the robot
+  left the buckle open, the scorer closes it by hand without touching the hotend; that does not earn 'locked'.
+- **Dropped:** the new hotend falling or set down on the bed, the table or the floor voids the run.
 
 ## Real-world trials
 
@@ -103,13 +106,18 @@ check the printer is off and cool, run, then photograph the end state and do the
 - **Printer:** a Bambu Lab A1 mini (US$199 on sale, US$219 list at Bambu's US store, Nov 2026). Before the trials,
   with the printer on, raise Z so the toolhead's underside is 20 cm above the table and park the toolhead over the
   bed's centre, then cut and unload the filament with the toolhead's lever, take off the front cover and the silicone
-  sock (Bambu's guide), and switch the printer off. Let the nozzle cool below 50 C. Mark the printer's feet on the
-  table with tape; the printer stands loose (5.5 kg).
+  sock (Bambu's guide), and switch the printer off. Let the nozzle cool below 50 C. Place the printer so the installed
+  hotend's axis is 37.5 cm in front of the arm bases' midpoint, on their midline (y 0); the block model's base
+  coordinates in `task.json` are for the simulation only. Mark the printer's feet on the table with tape; it stands
+  loose (5.5 kg). Powered off, the toolhead slides along the X arm: tape its parked position on the arm and slide it
+  back before each trial.
 - **Hotends:** two Bambu Hotend - A1 Series units (about US$10-13 each): a 0.4 mm one installed and locked, a 0.2 mm
   one as the new hotend with a strip of green tape on its heatsink's front. Swap their roles freely between trials.
 - **Holder:** print it in PLA (0.2 mm layers, 15% infill, about 200 g): a 4 x 16 x 8 cm block with two bosses on top,
   each 1.1 x 1.8 x 2 cm with a 0.9 cm square hole down its middle, 13 cm apart (positions in `task.json`'s setup). It
-  stands loose on the table, its front face 23 cm in front of the arm bases' midpoint.
+  stands loose on the table, its front face 23 cm in front of the arm bases' midpoint (against the printer's front
+  edge if the real base reaches further forward), slots at y -3.5 (new) and 9.5 (empty). Check that a real A1 hotend
+  stands in the 0.9 cm hole with its heatsink resting on the boss; widen the hole if needed.
 - **Camera:** a phone on a tripod at the front left, at the toolhead's height (about 20 cm), aimed at the buckle and
   the heatsink, plus the station's top camera.
 - **Safety:** the printer is off and cold, nothing is heated; a hotend weighs about 20-30 g; nothing is sharp. The
@@ -117,4 +125,6 @@ check the printer is off and cool, run, then photograph the end state and do the
 
 ## Simulation fidelity in full
 
-Beyond `task.json`'s fidelity text: every part is a rigid body built from boxes and cylinders. The printer (one loose 5.5 kg body, friction 0.8) keeps what the job touches: base and bed, the Z column at the right rear, the X arm and carriage behind the toolhead, and the toolhead with its pocket, window, catch and buckle. The toolhead is part of the printer body; with the power off the real carriage can be slid along X by hand. The hotend (22 g, estimated; friction 0.8 for the finned heatsink) is a 1.2 x 1.8 x 4.6 cm heatsink with a 0.7 x 1 x 0.4 cm lug and a 0.7 cm nozzle, 6 cm overall; the real A1 hotend is 4.73 cm long (Bambu's listing) with a shorter, wider heatsink. On the A1 the hotend's top goes up into the extruder and its magnet pulls it back against the heating assembly; here its top goes 1.2 cm up into a pocket with 1.5 mm of side clearance, and a sprung wedge in the pocket's back wall (a 120 N/m slide, about 0.4 N on a seated hotend) presses it against the front wall so that friction holds it. The A1's buckle is unlocked by pushing it to the right and then swung open; here it is a 6 g bar on a damped vertical hinge (0 to 90 degrees) whose closed position lies 1.5 mm under the lug of a seated hotend. The holder is a block with a 1.1 cm wide boss under each slot, so the gripper's finger plates pass either side of it. Finger pads and part poses are read once per control step.
+Beyond `task.json`'s fidelity text: every part is a rigid body built from boxes and cylinders. The printer (one loose 5.5 kg body, friction 0.8) keeps what the job touches: base and bed, the Z column at the right rear, the X arm and carriage behind the toolhead, and the toolhead with its pocket, window, catch and buckle. The toolhead is part of the printer body; with the power off the real carriage can be slid along X by hand. The hotend (22 g, estimated; friction 0.8 for the finned heatsink) is a 1.2 x 1.8 x 4.6 cm heatsink with a 0.7 x 1 x 0.4 cm lug and a 0.7 cm nozzle, 6 cm overall; the real A1 hotend is 4.73 cm long (Bambu's listing) with a shorter, wider heatsink. On the A1 the hotend's top goes up into the extruder and its magnet pulls it back against the heating assembly; here its top goes 1.2 cm up into a pocket with 1.5 mm of side clearance, and a sprung wedge in the pocket's back wall (a 120 N/m slide, about 0.4 N on a seated hotend) presses it against the front wall so that friction holds it. The A1's buckle is unlocked by pushing it to the right and then swung open; here it is a 6 g bar on a damped vertical hinge (0 to 90 degrees) whose closed position lies 1.5 mm under the lug of a seated hotend. The holder is a block with a 1.1 cm wide boss under each slot, so the gripper's finger plates pass either side of it. Not simulated: the push to the right that unlocks the real buckle and the lock of its right side; the
+real hotend goes in tilted slightly back and its magnet pulls it back flush against the heating assembly (here the
+catch presses it forward). Finger pads and part poses are read once per control step.

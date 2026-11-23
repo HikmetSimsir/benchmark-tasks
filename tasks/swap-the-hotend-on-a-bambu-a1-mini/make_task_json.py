@@ -44,27 +44,27 @@ hot_len = t.SINK[2] + t.NOZ_H + t.TIP_H
 task = {
     "title": "Swap the hotend on a Bambu Lab A1 mini 3D printer: buckle open, old hotend to its holder, new one seated, locked",
     "category": "Impact on AI timelines",
-    "keywords": ["3D printer maintenance", "hotend swap", "tool-free buckle", "latch", "precise insertion",
-                 "Bambu Lab A1 mini", "robots building robots"],
+    "keywords": ["3D printer maintenance", "hotend swap", "tool-free buckle", "overhead blind insertion", "fixed order",
+                 "Bambu Lab A1 mini", "printed robot parts"],
     "instruction": t.INSTRUCTION,
     "context": (
-        "Bambu Lab's hotend replacement for the A1 series (Bambu Lab wiki, Hotend Replacement for A1 Series; the A1 "
-        "mini takes the same hotend): with the printer off and cool, the filament cut and the toolhead's front cover "
-        "and silicone sock off, push the nozzle buckle to unlock it and swing it open, hold the heatsink and pull the "
-        "hotend out, put the new one in until it sits flush (a magnet aligns it) and close the buckle; if the buckle "
-        "will not lock, the hotend is not seated. Owners swap hotends to clear clogs, replace worn or damaged nozzles "
-        "or change size (0.2 mm for fine detail, 0.4 mm standard, hardened steel for abrasive filament). Done by "
-        "printer owners, makerspace staff and print-farm technicians. Low-cost robot arms are built from such prints: "
-        "the SO-ARM100 printing guide (for Hugging Face's LeRobot) lists Bambu Lab A/P/X-series printers, and "
-        "XLeRobot's parts were printed on a Bambu Lab A1. A robot that keeps printers running can make more robot "
-        "parts with less human help."),
+        "Low-cost robot arms are built from printed parts: the SO-ARM100 printing guide (LeRobot) lists Bambu Lab "
+        "A/P/X-series printers, and XLeRobot's parts were printed on a Bambu Lab A1. The printers that make those parts "
+        "need hotend swaps to clear clogs, replace worn or damaged nozzles or change size (0.2 mm for fine detail, "
+        "0.4 mm standard, hardened steel for abrasive filament), done by lab and makerspace staff and print-farm "
+        "technicians. Bambu's procedure for the A1 series (wiki: Hotend Replacement for A1 Series; the A1 mini takes "
+        "the same hotend): with the printer off and cool, the filament cut and the front cover and silicone sock off, "
+        "push the nozzle buckle to unlock it and swing it open, hold the heatsink and pull the hotend out, put the new "
+        "one in until it sits flush (a magnet aligns it) and close the buckle; if the buckle will not lock, the hotend "
+        "is not seated. The hard part: seating a small part overhead, half hidden under the toolhead, between "
+        "unlocking and locking."),
     "setup": (
         "Positions in cm from the midpoint between the two arm bases, on the table (x forward, y left); heights above "
         "the table. Bambu Lab A1 mini 3D printer, powered off and cold, front toward the robot; a loose 5.5 kg block "
         f"model: base 28 x 24 x 7 cm (x {cm(P0[0] - 0.14)} to {cm(P0[0] + 0.14)}, y -12 to 12) with an 18 x 18 cm bed "
         f"(top {cm(0.076)} cm up); Z column 6 x 5 x 31 cm at the right rear (x {cm(P0[0] + 0.05)} to "
-        f"{cm(P0[0] + 0.11)}, y -17 to -12); X arm 3 x 25 x 3 cm behind the toolhead at {cm(thz + 0.05)} to "
-        f"{cm(thz + 0.08)} cm. Toolhead (front cover and silicone sock off, filament cut): 3.5 x 5.4 x 7.5 cm, x "
+        f"{cm(P0[0] + 0.11)}, y -17 to -12); X arm 3 x 25 x 3 cm behind the toolhead, {cm(thz + 0.05)} to "
+        f"{cm(thz + 0.08)} cm up. Toolhead (front cover and silicone sock off, filament cut): 3.5 x 5.4 x 7.5 cm, x "
         f"{cm(TH[0] + t.FRONT)} to {cm(TH[0] + 0.025)}, y -2.7 to 2.7, underside {cm(thz)} cm up; in it a "
         f"{cm(t.POCKET[0])} x {cm(t.POCKET[1])} cm hotend pocket {cm(t.POCKET[2])} cm deep at x {cm(TH[0])}, y 0, "
         f"with a {cm(t.WIN_W)} cm wide, {cm(t.WIN_H)} cm high window in its front wall, and a sprung catch in its back "
@@ -80,36 +80,41 @@ task = {
         f"{cm(t.STAND_POS[0] - t.STAND_X / 2)} to {cm(t.STAND_POS[0] + t.STAND_X / 2)}, y "
         f"{cm(t.STAND_POS[1] - t.STAND_Y / 2)} to {cm(t.STAND_POS[1] + t.STAND_Y / 2)}) with two 1.1 x 1.8 x 2 cm "
         f"bosses on top (tops {cm(t.STAND_H)} cm up), each with a 0.9 cm square hole: the right slot at y "
-        f"{cm(sy['new'])} (new hotend), the left one at y {cm(sy['empty'])} (empty)."),
+        f"{cm(sy['new'])} (new hotend), the left one at y {cm(sy['empty'])} (empty). Real trial: place the A1 mini so "
+        f"the installed hotend's axis is at x {cm(TH[0])}, y 0, with the toolhead's underside {cm(thz)} cm up (set Z "
+        "before powering off); stand the holder in front of the printer (against its front edge if the real base "
+        f"reaches past x {cm(t.STAND_POS[0] + t.STAND_X / 2)}), slots at y {cm(sy['new'])} and {cm(sy['empty'])}."),
     "scoring": (
         "Score = 0.2 x old out + 0.4 x new seated + 0.3 x locked + 0.1 x finished; 0 if the new hotend is dropped. "
-        "Old out: the old hotend stands in a holder slot (axis within 0.3 cm of the slot's, heatsink on the boss "
-        "within 0.3 cm, within 8 degrees of upright) and was not dropped on the way. Dropped: a hotend falls 2 cm "
-        "within 0.5 s with no finger pad within 1.5 cm of its heatsink while not in the pocket or a slot, or its "
-        "nozzle tip reaches the bed or the table. New seated: the new hotend's top within 0.15 cm of the pocket's "
-        "top, its axis within 0.25 cm of the seat and within 4 degrees of vertical. Locked: the buckle within 3 "
-        "degrees of its closed stop while the new hotend is seated (closed, its bar lies 0.15 cm under a seated "
-        "hotend's lug). The catch holds a hotend only once it is pushed fully home: one let go short of its seat "
-        "slides out and falls. Finished: seated and locked, no finger "
-        "pad within 1 cm of the new hotend's heatsink or the buckle's tab, and the hotend and buckle still (under "
-        "0.15 cm of motion) for 20 steps (1 s); the run is a success, and ends, once that has held 1 s with the old "
-        "hotend in a slot. Real trial: the same from photos and video; seated means the buckle locks (Bambu: it will "
-        "not lock over an unseated hotend), a 0.1 mm "
-        "feeler does not enter between the heatsink and the heating assembly, and the hotend does not wobble when "
-        "wiggled by hand "
-        "after the run (Bambu's check)."),
+        "Old out: the old hotend stands in a holder slot (either; only the left one is free at the start; axis within "
+        "0.3 cm of the slot's, heatsink on the boss within 0.3 cm, within 8 degrees of upright) and was not dropped on "
+        "the way. Dropped: a hotend falls 2 cm within 0.5 s with no finger pad within 1.5 cm of its heatsink while not "
+        "in the pocket or a slot, or its nozzle tip reaches the bed or the table. New seated: the new hotend's top "
+        "within 0.15 cm of the pocket's top, its axis within 0.25 cm of the seat and within 4 degrees of vertical. "
+        "Locked: the buckle within 3 degrees of its closed stop while the new hotend is seated (closed, its bar lies "
+        "0.15 cm under a seated hotend's lug). The catch holds a hotend only once it is pushed fully home: one let go "
+        "short of its seat slides out and falls. Finished: seated and locked, no finger pad within 1 cm of the new "
+        "hotend's heatsink or the buckle's tab, and the new hotend still (under 0.15 cm of motion) for 20 steps (1 s); "
+        "the run is a success, and ends, once that has held 1 s with the old hotend in a slot. Real trial, from photos "
+        "and the video: old out = standing upright in either holder slot (end photo); locked = the buckle closed and "
+        "latched in the end photo; finished = no part of either gripper touches the new hotend or the buckle in the "
+        "last 1 s (video); seated = after the end photo, a strip of printer paper (about 0.1 mm) does not slide "
+        "between the heatsink and the heating assembly, and the buckle locks over it (Bambu: it will not lock over an "
+        "unseated hotend; if the robot left it open, the scorer closes it by hand without touching the hotend, which "
+        "does not earn 'locked'); dropped = the new hotend falls or is set down on the bed, the table or the floor."),
     "run_limit": "2,400 steps (2 minutes at 20 Hz)",
     "reset_notes": (
-        "Nothing is consumed. Put the old hotend back in the pocket and close the buckle, stand the new hotend in the "
-        "holder's right slot, and put the printer and the holder back on their tape marks. Real trials: the printer "
-        "stays off and cool (below 50 C) with the front cover and silicone sock off and the filament cut; the two "
-        "hotends may swap roles between trials."),
+        "Nothing is consumed. Put the old hotend back in the pocket and close and lock the buckle, stand the new "
+        "hotend in the holder's right slot, and put the printer and the holder back on their tape marks. Real trials: "
+        "the printer stays off and cool (below 50 C) with the front cover and silicone sock off and the filament cut; "
+        "powered off, its toolhead slides along the X arm, so slide it back to its tape mark (hotend axis at y 0) "
+        "before each trial; the two hotends may swap roles between trials."),
     "fidelity": (
-        "Rigid bodies. The printer is a loose 5.5 kg block model; its toolhead is part of it (the real carriage "
-        "slides along X when the printer is off). The hotend is simplified: 6 cm long (the real one 4.73 cm) with a "
-        "1.2 x 1.8 cm heatsink, 22 g (estimated). Its magnet and heater are a 1.2 cm deep pocket with a sprung catch "
-        "(about 0.4 N) that holds it by friction; the buckle is a hinged bar that closes 0.15 cm under a seated "
-        "hotend's lug (the real one also slides to lock)."),
+        "Rigid bodies. The printer is a loose 5.5 kg block model with its toolhead fixed to it (the real carriage "
+        "slides along X). The hotend is simplified: 6 cm long (real 4.73 cm), 1.2 x 1.8 cm heatsink, 22 g (est.). The "
+        "A1's magnet, which pulls the hotend back flush against the heater, is a 1.2 cm deep pocket with a sprung "
+        "catch (about 0.4 N) holding it by friction; the buckle is a hinged bar closing 0.15 cm under the hotend's "
+        "lug. Not simulated: the buckle's push to unlock and its right-side lock."),
     "scores": scores,
 }
 assert len(task["title"]) <= 120 and len(task["context"]) <= 1000 and len(task["fidelity"]) <= 500 \
