@@ -1,0 +1,2197 @@
+{
+ "full": {
+  "variant": "full",
+  "task_score": 1.0,
+  "success": true,
+  "steps": 868,
+  "plan_s": 50.0,
+  "report": {
+   "buckle_deg": 0.3,
+   "buckle_max_open_deg": 91.8,
+   "locked": true,
+   "old_slot": "empty",
+   "old_dropped": false,
+   "new_dropped": false,
+   "new_local_mm": [
+    -1.5,
+    0.6,
+    11.3
+   ],
+   "old_local_mm": [
+    -123.5,
+    95.1,
+    -54.0
+   ],
+   "new_tilt": 1.3,
+   "new_seated": true,
+   "new_in_pocket": true,
+   "hands_off": true,
+   "hold_steps": 39,
+   "printer_shift_mm": 0.0
+  },
+  "phases": {
+   "left": [
+    [
+     "left: wait",
+     0.0,
+     8.8
+    ],
+    [
+     "left: beside the old hotend",
+     8.8,
+     11.3
+    ],
+    [
+     "left: around the old hotend",
+     11.3,
+     12.8
+    ],
+    [
+     "left: grip old",
+     12.8,
+     13.8
+    ],
+    [
+     "left: pull down",
+     13.8,
+     15.8
+    ],
+    [
+     "left: out from under",
+     15.8,
+     17.3
+    ],
+    [
+     "left: above the empty slot",
+     17.3,
+     19.3
+    ],
+    [
+     "left: into the slot",
+     19.3,
+     20.8
+    ],
+    [
+     "left: let go old",
+     20.8,
+     21.6
+    ],
+    [
+     "left: out of the old one",
+     21.6,
+     22.6
+    ],
+    [
+     "left: back",
+     22.6,
+     24.6
+    ],
+    [
+     "left: wait",
+     24.6,
+     48.0
+    ]
+   ],
+   "right": [
+    [
+     "right: above the tab",
+     0.0,
+     3.0
+    ],
+    [
+     "right: before the tab",
+     3.0,
+     4.2
+    ],
+    [
+     "right: around the tab",
+     4.2,
+     5.4
+    ],
+    [
+     "right: grip tab",
+     5.4,
+     6.2
+    ],
+    [
+     "right: swing open",
+     6.2,
+     9.2
+    ],
+    [
+     "right: let go of the tab",
+     9.2,
+     9.8
+    ],
+    [
+     "right: back off",
+     9.8,
+     10.8
+    ],
+    [
+     "right: clear",
+     10.8,
+     12.3
+    ],
+    [
+     "right: above beside the new hotend",
+     12.3,
+     14.8
+    ],
+    [
+     "right: beside the new hotend",
+     14.8,
+     16.3
+    ],
+    [
+     "right: closer",
+     16.3,
+     17.3
+    ],
+    [
+     "right: around the new hotend",
+     17.3,
+     18.5
+    ],
+    [
+     "right: grip new",
+     18.5,
+     19.5
+    ],
+    [
+     "right: lift new",
+     19.5,
+     21.0
+    ],
+    [
+     "right: wait with it",
+     21.0,
+     22.1
+    ],
+    [
+     "right: toward the toolhead",
+     22.1,
+     24.6
+    ],
+    [
+     "right: under the pocket",
+     24.6,
+     26.1
+    ],
+    [
+     "right: rise",
+     26.1,
+     29.1
+    ],
+    [
+     "right: push home",
+     29.1,
+     30.1
+    ],
+    [
+     "right: hold",
+     30.1,
+     30.7
+    ],
+    [
+     "right: let go new",
+     30.7,
+     31.5
+    ],
+    [
+     "right: out",
+     31.5,
+     32.7
+    ],
+    [
+     "right: to the tab again",
+     32.7,
+     34.7
+    ],
+    [
+     "right: before the tab again",
+     34.7,
+     35.9
+    ],
+    [
+     "right: around the tab again",
+     35.9,
+     37.1
+    ],
+    [
+     "right: grip tab again",
+     37.1,
+     37.9
+    ],
+    [
+     "right: swing shut",
+     37.9,
+     40.4
+    ],
+    [
+     "right: press shut",
+     40.4,
+     40.9
+    ],
+    [
+     "right: let go of the tab",
+     40.9,
+     41.5
+    ],
+    [
+     "right: back off",
+     41.5,
+     42.5
+    ],
+    [
+     "right: back",
+     42.5,
+     45.0
+    ],
+    [
+     "right: wait",
+     45.0,
+     48.0
+    ]
+   ]
+  },
+  "worst_ik": {
+   "left": {
+    "wait": [
+     0.0,
+     0.0
+    ],
+    "beside the old hotend": [
+     0.1,
+     0.0
+    ],
+    "around the old hotend": [
+     0.0,
+     0.0
+    ],
+    "grip old": [
+     0.0,
+     0.0
+    ],
+    "pull down": [
+     0.1,
+     0.0
+    ],
+    "out from under": [
+     0.1,
+     0.0
+    ],
+    "above the empty slot": [
+     0.1,
+     0.0
+    ],
+    "into the slot": [
+     0.0,
+     0.0
+    ],
+    "let go old": [
+     0.0,
+     0.0
+    ],
+    "out of the old one": [
+     0.1,
+     0.0
+    ],
+    "back": [
+     0.2,
+     0.1
+    ]
+   },
+   "right": {
+    "above the tab": [
+     0.1,
+     0.0
+    ],
+    "before the tab": [
+     0.0,
+     0.0
+    ],
+    "around the tab": [
+     0.1,
+     0.0
+    ],
+    "grip tab": [
+     0.0,
+     0.0
+    ],
+    "swing open": [
+     0.1,
+     0.0
+    ],
+    "let go of the tab": [
+     0.0,
+     0.0
+    ],
+    "back off": [
+     0.1,
+     0.0
+    ],
+    "clear": [
+     0.1,
+     0.0
+    ],
+    "above beside the new hotend": [
+     0.1,
+     0.0
+    ],
+    "beside the new hotend": [
+     0.1,
+     0.0
+    ],
+    "closer": [
+     0.1,
+     0.0
+    ],
+    "around the new hotend": [
+     0.0,
+     0.0
+    ],
+    "grip new": [
+     0.0,
+     0.0
+    ],
+    "lift new": [
+     0.0,
+     0.0
+    ],
+    "wait with it": [
+     0.1,
+     0.0
+    ],
+    "toward the toolhead": [
+     0.1,
+     0.0
+    ],
+    "under the pocket": [
+     0.1,
+     0.0
+    ],
+    "rise": [
+     0.0,
+     0.0
+    ],
+    "push home": [
+     0.0,
+     0.0
+    ],
+    "hold": [
+     0.1,
+     0.0
+    ],
+    "let go new": [
+     0.1,
+     0.0
+    ],
+    "out": [
+     0.1,
+     0.0
+    ],
+    "to the tab again": [
+     0.0,
+     0.0
+    ],
+    "before the tab again": [
+     0.1,
+     0.0
+    ],
+    "around the tab again": [
+     0.1,
+     0.0
+    ],
+    "grip tab again": [
+     0.0,
+     0.0
+    ],
+    "swing shut": [
+     0.1,
+     0.0
+    ],
+    "press shut": [
+     0.0,
+     0.0
+    ],
+    "back": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "tracking_mm": {
+   "left": {
+    "left: wait": 13.6,
+    "left: beside the old hotend": 14.0,
+    "left: around the old hotend": 7.8,
+    "left: grip old": 2.9,
+    "left: pull down": 3.6,
+    "left: out from under": 3.1,
+    "left: above the empty slot": 4.0,
+    "left: into the slot": 6.4,
+    "left: let go old": 6.7,
+    "left: out of the old one": 20.1,
+    "left: back": 30.0
+   },
+   "right": {
+    "right: above the tab": 10.1,
+    "right: before the tab": 8.0,
+    "right: around the tab": 2.8,
+    "right: grip tab": 1.5,
+    "right: swing open": 2.5,
+    "right: let go of the tab": 1.7,
+    "right: back off": 1.8,
+    "right: clear": 1.4,
+    "right: above beside the new hotend": 3.7,
+    "right: beside the new hotend": 4.0,
+    "right: closer": 3.5,
+    "right: around the new hotend": 3.1,
+    "right: grip new": 3.4,
+    "right: lift new": 3.5,
+    "right: wait with it": 2.3,
+    "right: toward the toolhead": 3.7,
+    "right: under the pocket": 3.7,
+    "right: rise": 3.7,
+    "right: push home": 4.3,
+    "right: hold": 4.4,
+    "right: let go new": 4.4,
+    "right: out": 10.6,
+    "right: to the tab again": 5.5,
+    "right: before the tab again": 5.1,
+    "right: around the tab again": 1.7,
+    "right: grip tab again": 1.3,
+    "right: swing shut": 1.3,
+    "right: press shut": 0.3,
+    "right: back": 11.9
+   }
+  }
+ },
+ "no_lock": {
+  "variant": "no_lock",
+  "task_score": 0.6,
+  "success": false,
+  "steps": 804,
+  "plan_s": 40.2,
+  "report": {
+   "buckle_deg": 89.9,
+   "buckle_max_open_deg": 91.8,
+   "locked": false,
+   "old_slot": "empty",
+   "old_dropped": false,
+   "new_dropped": false,
+   "new_local_mm": [
+    -1.5,
+    0.6,
+    11.3
+   ],
+   "old_local_mm": [
+    -123.5,
+    95.1,
+    -54.0
+   ],
+   "new_tilt": 1.3,
+   "new_seated": true,
+   "new_in_pocket": true,
+   "hands_off": true,
+   "hold_steps": 0,
+   "printer_shift_mm": 0.0
+  },
+  "phases": {
+   "left": [
+    [
+     "left: wait",
+     0.0,
+     8.8
+    ],
+    [
+     "left: beside the old hotend",
+     8.8,
+     11.3
+    ],
+    [
+     "left: around the old hotend",
+     11.3,
+     12.8
+    ],
+    [
+     "left: grip old",
+     12.8,
+     13.8
+    ],
+    [
+     "left: pull down",
+     13.8,
+     15.8
+    ],
+    [
+     "left: out from under",
+     15.8,
+     17.3
+    ],
+    [
+     "left: above the empty slot",
+     17.3,
+     19.3
+    ],
+    [
+     "left: into the slot",
+     19.3,
+     20.8
+    ],
+    [
+     "left: let go old",
+     20.8,
+     21.6
+    ],
+    [
+     "left: out of the old one",
+     21.6,
+     22.6
+    ],
+    [
+     "left: back",
+     22.6,
+     24.6
+    ],
+    [
+     "left: wait",
+     24.6,
+     38.2
+    ]
+   ],
+   "right": [
+    [
+     "right: above the tab",
+     0.0,
+     3.0
+    ],
+    [
+     "right: before the tab",
+     3.0,
+     4.2
+    ],
+    [
+     "right: around the tab",
+     4.2,
+     5.4
+    ],
+    [
+     "right: grip tab",
+     5.4,
+     6.2
+    ],
+    [
+     "right: swing open",
+     6.2,
+     9.2
+    ],
+    [
+     "right: let go of the tab",
+     9.2,
+     9.8
+    ],
+    [
+     "right: back off",
+     9.8,
+     10.8
+    ],
+    [
+     "right: clear",
+     10.8,
+     12.3
+    ],
+    [
+     "right: above beside the new hotend",
+     12.3,
+     14.8
+    ],
+    [
+     "right: beside the new hotend",
+     14.8,
+     16.3
+    ],
+    [
+     "right: closer",
+     16.3,
+     17.3
+    ],
+    [
+     "right: around the new hotend",
+     17.3,
+     18.5
+    ],
+    [
+     "right: grip new",
+     18.5,
+     19.5
+    ],
+    [
+     "right: lift new",
+     19.5,
+     21.0
+    ],
+    [
+     "right: wait with it",
+     21.0,
+     22.1
+    ],
+    [
+     "right: toward the toolhead",
+     22.1,
+     24.6
+    ],
+    [
+     "right: under the pocket",
+     24.6,
+     26.1
+    ],
+    [
+     "right: rise",
+     26.1,
+     29.1
+    ],
+    [
+     "right: push home",
+     29.1,
+     30.1
+    ],
+    [
+     "right: hold",
+     30.1,
+     30.7
+    ],
+    [
+     "right: let go new",
+     30.7,
+     31.5
+    ],
+    [
+     "right: out",
+     31.5,
+     32.7
+    ],
+    [
+     "right: back",
+     32.7,
+     35.2
+    ],
+    [
+     "right: wait",
+     35.2,
+     38.2
+    ]
+   ]
+  },
+  "worst_ik": {
+   "left": {
+    "wait": [
+     0.0,
+     0.0
+    ],
+    "beside the old hotend": [
+     0.1,
+     0.0
+    ],
+    "around the old hotend": [
+     0.0,
+     0.0
+    ],
+    "grip old": [
+     0.0,
+     0.0
+    ],
+    "pull down": [
+     0.1,
+     0.0
+    ],
+    "out from under": [
+     0.1,
+     0.0
+    ],
+    "above the empty slot": [
+     0.1,
+     0.0
+    ],
+    "into the slot": [
+     0.0,
+     0.0
+    ],
+    "let go old": [
+     0.0,
+     0.0
+    ],
+    "out of the old one": [
+     0.1,
+     0.0
+    ],
+    "back": [
+     0.2,
+     0.1
+    ],
+    "done": [
+     0.0,
+     0.0
+    ]
+   },
+   "right": {
+    "above the tab": [
+     0.1,
+     0.0
+    ],
+    "before the tab": [
+     0.0,
+     0.0
+    ],
+    "around the tab": [
+     0.1,
+     0.0
+    ],
+    "grip tab": [
+     0.0,
+     0.0
+    ],
+    "swing open": [
+     0.1,
+     0.0
+    ],
+    "let go of the tab": [
+     0.0,
+     0.0
+    ],
+    "back off": [
+     0.1,
+     0.0
+    ],
+    "clear": [
+     0.1,
+     0.0
+    ],
+    "above beside the new hotend": [
+     0.1,
+     0.0
+    ],
+    "beside the new hotend": [
+     0.1,
+     0.0
+    ],
+    "closer": [
+     0.1,
+     0.0
+    ],
+    "around the new hotend": [
+     0.0,
+     0.0
+    ],
+    "grip new": [
+     0.0,
+     0.0
+    ],
+    "lift new": [
+     0.0,
+     0.0
+    ],
+    "wait with it": [
+     0.1,
+     0.0
+    ],
+    "toward the toolhead": [
+     0.1,
+     0.0
+    ],
+    "under the pocket": [
+     0.1,
+     0.0
+    ],
+    "rise": [
+     0.0,
+     0.0
+    ],
+    "push home": [
+     0.0,
+     0.0
+    ],
+    "hold": [
+     0.1,
+     0.0
+    ],
+    "let go new": [
+     0.1,
+     0.0
+    ],
+    "out": [
+     0.1,
+     0.0
+    ],
+    "back": [
+     0.1,
+     0.0
+    ],
+    "wait": [
+     0.0,
+     0.0
+    ],
+    "done": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "tracking_mm": {
+   "left": {
+    "left: wait": 13.6,
+    "left: beside the old hotend": 14.0,
+    "left: around the old hotend": 7.8,
+    "left: grip old": 2.9,
+    "left: pull down": 3.6,
+    "left: out from under": 3.1,
+    "left: above the empty slot": 4.0,
+    "left: into the slot": 6.4,
+    "left: let go old": 6.7,
+    "left: out of the old one": 20.1,
+    "left: back": 30.0,
+    "done": 1.0
+   },
+   "right": {
+    "right: above the tab": 10.1,
+    "right: before the tab": 8.0,
+    "right: around the tab": 2.8,
+    "right: grip tab": 1.5,
+    "right: swing open": 2.5,
+    "right: let go of the tab": 1.7,
+    "right: back off": 1.8,
+    "right: clear": 1.4,
+    "right: above beside the new hotend": 3.7,
+    "right: beside the new hotend": 4.0,
+    "right: closer": 3.5,
+    "right: around the new hotend": 3.1,
+    "right: grip new": 3.4,
+    "right: lift new": 3.5,
+    "right: wait with it": 2.3,
+    "right: toward the toolhead": 3.7,
+    "right: under the pocket": 3.7,
+    "right: rise": 3.7,
+    "right: push home": 4.3,
+    "right: hold": 4.4,
+    "right: let go new": 4.4,
+    "right: out": 10.6,
+    "right: back": 12.7,
+    "right: wait": 14.6,
+    "done": 0.8
+   }
+  }
+ },
+ "half_in": {
+  "variant": "half_in",
+  "task_score": 0.0,
+  "success": false,
+  "steps": 980,
+  "plan_s": 49.0,
+  "report": {
+   "buckle_deg": 0.3,
+   "buckle_max_open_deg": 91.8,
+   "locked": true,
+   "old_slot": "empty",
+   "old_dropped": false,
+   "new_dropped": true,
+   "new_local_mm": [
+    -1.3,
+    25.5,
+    -118.0
+   ],
+   "old_local_mm": [
+    -123.5,
+    95.1,
+    -54.0
+   ],
+   "new_tilt": 90.0,
+   "new_seated": false,
+   "new_in_pocket": false,
+   "hands_off": true,
+   "hold_steps": 0,
+   "printer_shift_mm": 0.0
+  },
+  "phases": {
+   "left": [
+    [
+     "left: wait",
+     0.0,
+     8.8
+    ],
+    [
+     "left: beside the old hotend",
+     8.8,
+     11.3
+    ],
+    [
+     "left: around the old hotend",
+     11.3,
+     12.8
+    ],
+    [
+     "left: grip old",
+     12.8,
+     13.8
+    ],
+    [
+     "left: pull down",
+     13.8,
+     15.8
+    ],
+    [
+     "left: out from under",
+     15.8,
+     17.3
+    ],
+    [
+     "left: above the empty slot",
+     17.3,
+     19.3
+    ],
+    [
+     "left: into the slot",
+     19.3,
+     20.8
+    ],
+    [
+     "left: let go old",
+     20.8,
+     21.6
+    ],
+    [
+     "left: out of the old one",
+     21.6,
+     22.6
+    ],
+    [
+     "left: back",
+     22.6,
+     24.6
+    ],
+    [
+     "left: wait",
+     24.6,
+     47.0
+    ]
+   ],
+   "right": [
+    [
+     "right: above the tab",
+     0.0,
+     3.0
+    ],
+    [
+     "right: before the tab",
+     3.0,
+     4.2
+    ],
+    [
+     "right: around the tab",
+     4.2,
+     5.4
+    ],
+    [
+     "right: grip tab",
+     5.4,
+     6.2
+    ],
+    [
+     "right: swing open",
+     6.2,
+     9.2
+    ],
+    [
+     "right: let go of the tab",
+     9.2,
+     9.8
+    ],
+    [
+     "right: back off",
+     9.8,
+     10.8
+    ],
+    [
+     "right: clear",
+     10.8,
+     12.3
+    ],
+    [
+     "right: above beside the new hotend",
+     12.3,
+     14.8
+    ],
+    [
+     "right: beside the new hotend",
+     14.8,
+     16.3
+    ],
+    [
+     "right: closer",
+     16.3,
+     17.3
+    ],
+    [
+     "right: around the new hotend",
+     17.3,
+     18.5
+    ],
+    [
+     "right: grip new",
+     18.5,
+     19.5
+    ],
+    [
+     "right: lift new",
+     19.5,
+     21.0
+    ],
+    [
+     "right: wait with it",
+     21.0,
+     22.1
+    ],
+    [
+     "right: toward the toolhead",
+     22.1,
+     24.6
+    ],
+    [
+     "right: under the pocket",
+     24.6,
+     26.1
+    ],
+    [
+     "right: rise",
+     26.1,
+     29.1
+    ],
+    [
+     "right: hold",
+     29.1,
+     29.7
+    ],
+    [
+     "right: let go new",
+     29.7,
+     30.5
+    ],
+    [
+     "right: out",
+     30.5,
+     31.7
+    ],
+    [
+     "right: to the tab again",
+     31.7,
+     33.7
+    ],
+    [
+     "right: before the tab again",
+     33.7,
+     34.9
+    ],
+    [
+     "right: around the tab again",
+     34.9,
+     36.1
+    ],
+    [
+     "right: grip tab again",
+     36.1,
+     36.9
+    ],
+    [
+     "right: swing shut",
+     36.9,
+     39.4
+    ],
+    [
+     "right: press shut",
+     39.4,
+     39.9
+    ],
+    [
+     "right: let go of the tab",
+     39.9,
+     40.5
+    ],
+    [
+     "right: back off",
+     40.5,
+     41.5
+    ],
+    [
+     "right: back",
+     41.5,
+     44.0
+    ],
+    [
+     "right: wait",
+     44.0,
+     47.0
+    ]
+   ]
+  },
+  "worst_ik": {
+   "left": {
+    "wait": [
+     0.0,
+     0.0
+    ],
+    "beside the old hotend": [
+     0.1,
+     0.0
+    ],
+    "around the old hotend": [
+     0.0,
+     0.0
+    ],
+    "grip old": [
+     0.0,
+     0.0
+    ],
+    "pull down": [
+     0.1,
+     0.0
+    ],
+    "out from under": [
+     0.1,
+     0.0
+    ],
+    "above the empty slot": [
+     0.1,
+     0.0
+    ],
+    "into the slot": [
+     0.0,
+     0.0
+    ],
+    "let go old": [
+     0.0,
+     0.0
+    ],
+    "out of the old one": [
+     0.1,
+     0.0
+    ],
+    "back": [
+     0.2,
+     0.1
+    ],
+    "done": [
+     0.0,
+     0.0
+    ]
+   },
+   "right": {
+    "above the tab": [
+     0.1,
+     0.0
+    ],
+    "before the tab": [
+     0.0,
+     0.0
+    ],
+    "around the tab": [
+     0.1,
+     0.0
+    ],
+    "grip tab": [
+     0.0,
+     0.0
+    ],
+    "swing open": [
+     0.1,
+     0.0
+    ],
+    "let go of the tab": [
+     0.0,
+     0.0
+    ],
+    "back off": [
+     0.1,
+     0.0
+    ],
+    "clear": [
+     0.1,
+     0.0
+    ],
+    "above beside the new hotend": [
+     0.1,
+     0.0
+    ],
+    "beside the new hotend": [
+     0.1,
+     0.0
+    ],
+    "closer": [
+     0.1,
+     0.0
+    ],
+    "around the new hotend": [
+     0.0,
+     0.0
+    ],
+    "grip new": [
+     0.0,
+     0.0
+    ],
+    "lift new": [
+     0.0,
+     0.0
+    ],
+    "wait with it": [
+     0.1,
+     0.0
+    ],
+    "toward the toolhead": [
+     0.1,
+     0.0
+    ],
+    "under the pocket": [
+     0.1,
+     0.0
+    ],
+    "rise": [
+     0.0,
+     0.0
+    ],
+    "hold": [
+     0.0,
+     0.0
+    ],
+    "let go new": [
+     0.0,
+     0.0
+    ],
+    "out": [
+     0.1,
+     0.0
+    ],
+    "to the tab again": [
+     0.0,
+     0.0
+    ],
+    "before the tab again": [
+     0.1,
+     0.0
+    ],
+    "around the tab again": [
+     0.1,
+     0.0
+    ],
+    "grip tab again": [
+     0.0,
+     0.0
+    ],
+    "swing shut": [
+     0.1,
+     0.0
+    ],
+    "press shut": [
+     0.0,
+     0.0
+    ],
+    "back": [
+     0.1,
+     0.0
+    ],
+    "wait": [
+     0.1,
+     0.0
+    ],
+    "done": [
+     0.1,
+     0.0
+    ]
+   }
+  },
+  "tracking_mm": {
+   "left": {
+    "left: wait": 13.6,
+    "left: beside the old hotend": 14.0,
+    "left: around the old hotend": 7.8,
+    "left: grip old": 2.9,
+    "left: pull down": 3.6,
+    "left: out from under": 3.1,
+    "left: above the empty slot": 4.0,
+    "left: into the slot": 6.4,
+    "left: let go old": 6.7,
+    "left: out of the old one": 20.1,
+    "left: back": 30.0,
+    "done": 1.1
+   },
+   "right": {
+    "right: above the tab": 10.1,
+    "right: before the tab": 8.0,
+    "right: around the tab": 2.8,
+    "right: grip tab": 1.5,
+    "right: swing open": 2.5,
+    "right: let go of the tab": 1.7,
+    "right: back off": 1.8,
+    "right: clear": 1.4,
+    "right: above beside the new hotend": 3.7,
+    "right: beside the new hotend": 4.0,
+    "right: closer": 3.5,
+    "right: around the new hotend": 3.1,
+    "right: grip new": 3.4,
+    "right: lift new": 3.5,
+    "right: wait with it": 2.3,
+    "right: toward the toolhead": 3.7,
+    "right: under the pocket": 3.7,
+    "right: rise": 4.0,
+    "right: hold": 0.7,
+    "right: let go new": 7.1,
+    "right: out": 6.4,
+    "right: to the tab again": 3.2,
+    "right: before the tab again": 5.0,
+    "right: around the tab again": 1.6,
+    "right: grip tab again": 1.3,
+    "right: swing shut": 1.3,
+    "right: press shut": 0.3,
+    "right: back": 12.4,
+    "right: wait": 12.1,
+    "done": 0.6
+   }
+  }
+ },
+ "drop_old": {
+  "variant": "drop_old",
+  "task_score": 0.8,
+  "success": false,
+  "steps": 988,
+  "plan_s": 49.4,
+  "report": {
+   "buckle_deg": 0.2,
+   "buckle_max_open_deg": 91.8,
+   "locked": true,
+   "old_slot": null,
+   "old_dropped": true,
+   "new_dropped": false,
+   "new_local_mm": [
+    -1.5,
+    0.2,
+    11.5
+   ],
+   "old_local_mm": [
+    -87.9,
+    -42.3,
+    -120.9
+   ],
+   "new_tilt": 2.4,
+   "new_seated": true,
+   "new_in_pocket": true,
+   "hands_off": true,
+   "hold_steps": 171,
+   "printer_shift_mm": 0.0
+  },
+  "phases": {
+   "left": [
+    [
+     "left: wait",
+     0.0,
+     8.8
+    ],
+    [
+     "left: beside the old hotend",
+     8.8,
+     11.3
+    ],
+    [
+     "left: around the old hotend",
+     11.3,
+     12.8
+    ],
+    [
+     "left: grip old",
+     12.8,
+     13.8
+    ],
+    [
+     "left: pull down",
+     13.8,
+     15.8
+    ],
+    [
+     "left: out from under",
+     15.8,
+     17.3
+    ],
+    [
+     "left: let go over the bed",
+     17.3,
+     18.1
+    ],
+    [
+     "left: away",
+     18.1,
+     19.1
+    ],
+    [
+     "left: back",
+     19.1,
+     21.1
+    ],
+    [
+     "left: wait",
+     21.1,
+     47.4
+    ]
+   ],
+   "right": [
+    [
+     "right: above the tab",
+     0.0,
+     3.0
+    ],
+    [
+     "right: before the tab",
+     3.0,
+     4.2
+    ],
+    [
+     "right: around the tab",
+     4.2,
+     5.4
+    ],
+    [
+     "right: grip tab",
+     5.4,
+     6.2
+    ],
+    [
+     "right: swing open",
+     6.2,
+     9.2
+    ],
+    [
+     "right: let go of the tab",
+     9.2,
+     9.8
+    ],
+    [
+     "right: back off",
+     9.8,
+     10.8
+    ],
+    [
+     "right: clear",
+     10.8,
+     12.3
+    ],
+    [
+     "right: above beside the new hotend",
+     12.3,
+     14.8
+    ],
+    [
+     "right: beside the new hotend",
+     14.8,
+     16.3
+    ],
+    [
+     "right: closer",
+     16.3,
+     17.3
+    ],
+    [
+     "right: around the new hotend",
+     17.3,
+     18.5
+    ],
+    [
+     "right: grip new",
+     18.5,
+     19.5
+    ],
+    [
+     "right: lift new",
+     19.5,
+     21.0
+    ],
+    [
+     "right: wait with it",
+     21.0,
+     21.5
+    ],
+    [
+     "right: toward the toolhead",
+     21.5,
+     24.0
+    ],
+    [
+     "right: under the pocket",
+     24.0,
+     25.5
+    ],
+    [
+     "right: rise",
+     25.5,
+     28.5
+    ],
+    [
+     "right: push home",
+     28.5,
+     29.5
+    ],
+    [
+     "right: hold",
+     29.5,
+     30.1
+    ],
+    [
+     "right: let go new",
+     30.1,
+     30.9
+    ],
+    [
+     "right: out",
+     30.9,
+     32.1
+    ],
+    [
+     "right: to the tab again",
+     32.1,
+     34.1
+    ],
+    [
+     "right: before the tab again",
+     34.1,
+     35.3
+    ],
+    [
+     "right: around the tab again",
+     35.3,
+     36.5
+    ],
+    [
+     "right: grip tab again",
+     36.5,
+     37.3
+    ],
+    [
+     "right: swing shut",
+     37.3,
+     39.8
+    ],
+    [
+     "right: press shut",
+     39.8,
+     40.3
+    ],
+    [
+     "right: let go of the tab",
+     40.3,
+     40.9
+    ],
+    [
+     "right: back off",
+     40.9,
+     41.9
+    ],
+    [
+     "right: back",
+     41.9,
+     44.4
+    ],
+    [
+     "right: wait",
+     44.4,
+     47.4
+    ]
+   ]
+  },
+  "worst_ik": {
+   "left": {
+    "wait": [
+     0.1,
+     0.0
+    ],
+    "beside the old hotend": [
+     0.1,
+     0.0
+    ],
+    "around the old hotend": [
+     0.0,
+     0.0
+    ],
+    "grip old": [
+     0.0,
+     0.0
+    ],
+    "pull down": [
+     0.1,
+     0.0
+    ],
+    "out from under": [
+     0.1,
+     0.0
+    ],
+    "let go over the bed": [
+     0.0,
+     0.0
+    ],
+    "away": [
+     0.1,
+     0.0
+    ],
+    "back": [
+     0.1,
+     0.0
+    ],
+    "done": [
+     0.1,
+     0.0
+    ]
+   },
+   "right": {
+    "above the tab": [
+     0.1,
+     0.0
+    ],
+    "before the tab": [
+     0.0,
+     0.0
+    ],
+    "around the tab": [
+     0.1,
+     0.0
+    ],
+    "grip tab": [
+     0.0,
+     0.0
+    ],
+    "swing open": [
+     0.1,
+     0.0
+    ],
+    "let go of the tab": [
+     0.0,
+     0.0
+    ],
+    "back off": [
+     0.1,
+     0.0
+    ],
+    "clear": [
+     0.1,
+     0.0
+    ],
+    "above beside the new hotend": [
+     0.1,
+     0.0
+    ],
+    "beside the new hotend": [
+     0.1,
+     0.0
+    ],
+    "closer": [
+     0.1,
+     0.0
+    ],
+    "around the new hotend": [
+     0.0,
+     0.0
+    ],
+    "grip new": [
+     0.0,
+     0.0
+    ],
+    "lift new": [
+     0.0,
+     0.0
+    ],
+    "wait with it": [
+     0.0,
+     0.0
+    ],
+    "toward the toolhead": [
+     0.1,
+     0.0
+    ],
+    "under the pocket": [
+     0.1,
+     0.0
+    ],
+    "rise": [
+     0.0,
+     0.0
+    ],
+    "push home": [
+     0.1,
+     0.0
+    ],
+    "hold": [
+     0.1,
+     0.0
+    ],
+    "let go new": [
+     0.1,
+     0.0
+    ],
+    "out": [
+     0.1,
+     0.0
+    ],
+    "to the tab again": [
+     0.0,
+     0.0
+    ],
+    "before the tab again": [
+     0.1,
+     0.0
+    ],
+    "around the tab again": [
+     0.1,
+     0.0
+    ],
+    "grip tab again": [
+     0.0,
+     0.0
+    ],
+    "swing shut": [
+     0.1,
+     0.0
+    ],
+    "press shut": [
+     0.0,
+     0.0
+    ],
+    "back": [
+     0.1,
+     0.0
+    ],
+    "wait": [
+     0.1,
+     0.0
+    ],
+    "done": [
+     0.1,
+     0.0
+    ]
+   }
+  },
+  "tracking_mm": {
+   "left": {
+    "left: wait": 18.4,
+    "left: beside the old hotend": 14.0,
+    "left: around the old hotend": 7.8,
+    "left: grip old": 2.9,
+    "left: pull down": 3.6,
+    "left: out from under": 3.1,
+    "left: let go over the bed": 2.8,
+    "left: away": 5.6,
+    "left: back": 17.5,
+    "done": 0.6
+   },
+   "right": {
+    "right: above the tab": 10.1,
+    "right: before the tab": 8.0,
+    "right: around the tab": 2.8,
+    "right: grip tab": 1.5,
+    "right: swing open": 2.5,
+    "right: let go of the tab": 1.7,
+    "right: back off": 1.8,
+    "right: clear": 1.4,
+    "right: above beside the new hotend": 3.7,
+    "right: beside the new hotend": 4.0,
+    "right: closer": 3.5,
+    "right: around the new hotend": 3.1,
+    "right: grip new": 3.4,
+    "right: lift new": 3.8,
+    "right: wait with it": 2.8,
+    "right: toward the toolhead": 3.6,
+    "right: under the pocket": 4.2,
+    "right: rise": 4.3,
+    "right: push home": 4.9,
+    "right: hold": 5.0,
+    "right: let go new": 6.6,
+    "right: out": 9.8,
+    "right: to the tab again": 5.0,
+    "right: before the tab again": 5.0,
+    "right: around the tab again": 1.7,
+    "right: grip tab again": 1.3,
+    "right: swing shut": 1.3,
+    "right: press shut": 0.3,
+    "right: back": 12.3,
+    "right: wait": 12.1,
+    "done": 0.7
+   }
+  }
+ },
+ "drop_new": {
+  "variant": "drop_new",
+  "task_score": 0.0,
+  "success": false,
+  "steps": 689,
+  "plan_s": 34.4,
+  "report": {
+   "buckle_deg": 90.0,
+   "buckle_max_open_deg": 91.8,
+   "locked": false,
+   "old_slot": "empty",
+   "old_dropped": false,
+   "new_dropped": true,
+   "new_local_mm": [
+    -82.2,
+    29.3,
+    -114.0
+   ],
+   "old_local_mm": [
+    -123.5,
+    95.1,
+    -54.0
+   ],
+   "new_tilt": 90.0,
+   "new_seated": false,
+   "new_in_pocket": false,
+   "hands_off": true,
+   "hold_steps": 0,
+   "printer_shift_mm": 0.0
+  },
+  "phases": {
+   "left": [
+    [
+     "left: wait",
+     0.0,
+     8.8
+    ],
+    [
+     "left: beside the old hotend",
+     8.8,
+     11.3
+    ],
+    [
+     "left: around the old hotend",
+     11.3,
+     12.8
+    ],
+    [
+     "left: grip old",
+     12.8,
+     13.8
+    ],
+    [
+     "left: pull down",
+     13.8,
+     15.8
+    ],
+    [
+     "left: out from under",
+     15.8,
+     17.3
+    ],
+    [
+     "left: above the empty slot",
+     17.3,
+     19.3
+    ],
+    [
+     "left: into the slot",
+     19.3,
+     20.8
+    ],
+    [
+     "left: let go old",
+     20.8,
+     21.6
+    ],
+    [
+     "left: out of the old one",
+     21.6,
+     22.6
+    ],
+    [
+     "left: back",
+     22.6,
+     24.6
+    ],
+    [
+     "left: wait",
+     24.6,
+     32.4
+    ]
+   ],
+   "right": [
+    [
+     "right: above the tab",
+     0.0,
+     3.0
+    ],
+    [
+     "right: before the tab",
+     3.0,
+     4.2
+    ],
+    [
+     "right: around the tab",
+     4.2,
+     5.4
+    ],
+    [
+     "right: grip tab",
+     5.4,
+     6.2
+    ],
+    [
+     "right: swing open",
+     6.2,
+     9.2
+    ],
+    [
+     "right: let go of the tab",
+     9.2,
+     9.8
+    ],
+    [
+     "right: back off",
+     9.8,
+     10.8
+    ],
+    [
+     "right: clear",
+     10.8,
+     12.3
+    ],
+    [
+     "right: above beside the new hotend",
+     12.3,
+     14.8
+    ],
+    [
+     "right: beside the new hotend",
+     14.8,
+     16.3
+    ],
+    [
+     "right: closer",
+     16.3,
+     17.3
+    ],
+    [
+     "right: around the new hotend",
+     17.3,
+     18.5
+    ],
+    [
+     "right: grip new",
+     18.5,
+     19.5
+    ],
+    [
+     "right: lift new",
+     19.5,
+     21.0
+    ],
+    [
+     "right: wait with it",
+     21.0,
+     22.1
+    ],
+    [
+     "right: toward the toolhead",
+     22.1,
+     24.6
+    ],
+    [
+     "right: let go over the bed",
+     24.6,
+     25.4
+    ],
+    [
+     "right: away",
+     25.4,
+     26.9
+    ],
+    [
+     "right: back",
+     26.9,
+     29.4
+    ],
+    [
+     "right: wait",
+     29.4,
+     32.4
+    ]
+   ]
+  },
+  "worst_ik": {
+   "left": {
+    "wait": [
+     0.0,
+     0.0
+    ],
+    "beside the old hotend": [
+     0.1,
+     0.0
+    ],
+    "around the old hotend": [
+     0.0,
+     0.0
+    ],
+    "grip old": [
+     0.0,
+     0.0
+    ],
+    "pull down": [
+     0.1,
+     0.0
+    ],
+    "out from under": [
+     0.1,
+     0.0
+    ],
+    "above the empty slot": [
+     0.1,
+     0.0
+    ],
+    "into the slot": [
+     0.0,
+     0.0
+    ],
+    "let go old": [
+     0.0,
+     0.0
+    ],
+    "out of the old one": [
+     0.1,
+     0.0
+    ],
+    "back": [
+     0.2,
+     0.1
+    ],
+    "done": [
+     0.0,
+     0.0
+    ]
+   },
+   "right": {
+    "above the tab": [
+     0.1,
+     0.0
+    ],
+    "before the tab": [
+     0.0,
+     0.0
+    ],
+    "around the tab": [
+     0.1,
+     0.0
+    ],
+    "grip tab": [
+     0.0,
+     0.0
+    ],
+    "swing open": [
+     0.1,
+     0.0
+    ],
+    "let go of the tab": [
+     0.0,
+     0.0
+    ],
+    "back off": [
+     0.1,
+     0.0
+    ],
+    "clear": [
+     0.1,
+     0.0
+    ],
+    "above beside the new hotend": [
+     0.1,
+     0.0
+    ],
+    "beside the new hotend": [
+     0.1,
+     0.0
+    ],
+    "closer": [
+     0.1,
+     0.0
+    ],
+    "around the new hotend": [
+     0.0,
+     0.0
+    ],
+    "grip new": [
+     0.0,
+     0.0
+    ],
+    "lift new": [
+     0.0,
+     0.0
+    ],
+    "wait with it": [
+     0.1,
+     0.0
+    ],
+    "toward the toolhead": [
+     0.1,
+     0.0
+    ],
+    "let go over the bed": [
+     0.0,
+     0.0
+    ],
+    "away": [
+     0.1,
+     0.0
+    ],
+    "back": [
+     0.1,
+     0.0
+    ],
+    "wait": [
+     0.0,
+     0.0
+    ],
+    "done": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "tracking_mm": {
+   "left": {
+    "left: wait": 13.6,
+    "left: beside the old hotend": 14.0,
+    "left: around the old hotend": 7.8,
+    "left: grip old": 2.9,
+    "left: pull down": 3.6,
+    "left: out from under": 3.1,
+    "left: above the empty slot": 4.0,
+    "left: into the slot": 6.4,
+    "left: let go old": 6.7,
+    "left: out of the old one": 20.1,
+    "left: back": 30.0,
+    "done": 1.1
+   },
+   "right": {
+    "right: above the tab": 10.1,
+    "right: before the tab": 8.0,
+    "right: around the tab": 2.8,
+    "right: grip tab": 1.5,
+    "right: swing open": 2.5,
+    "right: let go of the tab": 1.7,
+    "right: back off": 1.8,
+    "right: clear": 1.4,
+    "right: above beside the new hotend": 3.7,
+    "right: beside the new hotend": 4.0,
+    "right: closer": 3.5,
+    "right: around the new hotend": 3.1,
+    "right: grip new": 3.4,
+    "right: lift new": 3.5,
+    "right: wait with it": 2.3,
+    "right: toward the toolhead": 3.7,
+    "right: let go over the bed": 2.9,
+    "right: away": 3.3,
+    "right: back": 13.3,
+    "right: wait": 14.3,
+    "done": 0.9
+   }
+  }
+ }
+}
