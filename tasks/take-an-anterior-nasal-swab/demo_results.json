@@ -1,0 +1,2691 @@
+{
+  "full": {
+    "variant": "full",
+    "task_score": 1.0,
+    "success": true,
+    "steps": 1531,
+    "plan_s": 78.6,
+    "report": {
+      "nostrils": {
+        "left": {
+          "circles": 6.0,
+          "share": 0.84,
+          "credit": 1.0,
+          "sectors": 12,
+          "depth_steps": 349,
+          "contact_steps": 293,
+          "moving_steps": 225,
+          "f_median": 0.99,
+          "f_max": 2.55,
+          "depth_max_mm": 14.2
+        },
+        "right": {
+          "circles": 5.95,
+          "share": 0.91,
+          "credit": 1.0,
+          "sectors": 12,
+          "depth_steps": 347,
+          "contact_steps": 316,
+          "moving_steps": 262,
+          "f_median": 1.21,
+          "f_max": 2.11,
+          "depth_max_mm": 13.2
+        }
+      },
+      "tip_touched": null,
+      "too_deep": false,
+      "dropped": false,
+      "too_hard": false,
+      "cap_gap_mm": 0.9,
+      "cap_aligned": true,
+      "cap_seated": true,
+      "cap_latched": true,
+      "swab_removed": true,
+      "push_n": 0.05,
+      "push_max_n": 3.47,
+      "push_steps_max": 33,
+      "cap_home_step": 1333,
+      "cap_home_steps": 199,
+      "swab_held": false,
+      "wall_force": {
+        "left": 0.0,
+        "right": 0.0
+      },
+      "kit_shift_mm": 8.6
+    },
+    "phases": {
+      "left": [
+        [
+          "left: wait",
+          0.0,
+          1.5
+        ],
+        [
+          "left: above the tube",
+          1.5,
+          3.5
+        ],
+        [
+          "left: around the tube",
+          3.5,
+          4.7
+        ],
+        [
+          "left: grip",
+          4.7,
+          5.5
+        ],
+        [
+          "left: hold",
+          5.5,
+          8.5
+        ],
+        [
+          "left: let go",
+          8.5,
+          9.1
+        ],
+        [
+          "left: up",
+          9.1,
+          10.6
+        ],
+        [
+          "left: back",
+          10.6,
+          13.1
+        ],
+        [
+          "left: wait",
+          13.1,
+          56.9
+        ],
+        [
+          "left: above the tube",
+          56.9,
+          59.4
+        ],
+        [
+          "left: around the tube",
+          59.4,
+          60.6
+        ],
+        [
+          "left: grip",
+          60.6,
+          61.4
+        ],
+        [
+          "left: hold",
+          61.4,
+          67.3
+        ],
+        [
+          "left: let go",
+          67.3,
+          67.9
+        ],
+        [
+          "left: up",
+          67.9,
+          68.7
+        ],
+        [
+          "left: back",
+          68.7,
+          70.3
+        ],
+        [
+          "left: wait",
+          70.3,
+          76.6
+        ]
+      ],
+      "right": [
+        [
+          "swab: above the cap",
+          0.0,
+          3.0
+        ],
+        [
+          "swab: around the cap",
+          3.0,
+          4.5
+        ],
+        [
+          "swab: grip",
+          4.5,
+          5.5
+        ],
+        [
+          "swab: pull",
+          5.5,
+          8.0
+        ],
+        [
+          "swab: lift",
+          8.0,
+          9.0
+        ],
+        [
+          "left: approach",
+          9.0,
+          12.0
+        ],
+        [
+          "left: hover",
+          12.0,
+          13.5
+        ],
+        [
+          "left: insert",
+          13.5,
+          15.0
+        ],
+        [
+          "left: ramp out",
+          15.0,
+          15.6
+        ],
+        [
+          "left: circle",
+          15.6,
+          31.2
+        ],
+        [
+          "left: ramp in",
+          31.2,
+          31.7
+        ],
+        [
+          "left: withdraw",
+          31.7,
+          32.7
+        ],
+        [
+          "right: approach",
+          32.7,
+          34.7
+        ],
+        [
+          "right: hover",
+          34.7,
+          36.2
+        ],
+        [
+          "right: insert",
+          36.2,
+          37.7
+        ],
+        [
+          "right: ramp out",
+          37.7,
+          38.3
+        ],
+        [
+          "right: circle",
+          38.3,
+          53.9
+        ],
+        [
+          "right: ramp in",
+          53.9,
+          54.4
+        ],
+        [
+          "right: withdraw",
+          54.4,
+          55.4
+        ],
+        [
+          "tube: away",
+          55.4,
+          56.4
+        ],
+        [
+          "tube: turn",
+          56.4,
+          59.4
+        ],
+        [
+          "tube: align",
+          59.4,
+          61.4
+        ],
+        [
+          "tube: enter",
+          61.4,
+          64.4
+        ],
+        [
+          "tube: push",
+          64.4,
+          65.4
+        ],
+        [
+          "tube: press",
+          65.4,
+          66.4
+        ],
+        [
+          "tube: release",
+          66.4,
+          67.0
+        ],
+        [
+          "tube: retreat",
+          67.0,
+          67.6
+        ],
+        [
+          "tube: clear",
+          67.6,
+          68.6
+        ],
+        [
+          "tube: wait",
+          68.6,
+          76.6
+        ]
+      ]
+    },
+    "worst_ik": {
+      "left": {
+        "wait": [
+          0.0,
+          0.0
+        ],
+        "above the tube": [
+          0.1,
+          0.0
+        ],
+        "around the tube": [
+          0.1,
+          0.0
+        ],
+        "grip": [
+          0.0,
+          0.0
+        ],
+        "hold": [
+          0.0,
+          0.0
+        ],
+        "let go": [
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.1,
+          0.0
+        ],
+        "back": [
+          0.1,
+          0.0
+        ]
+      },
+      "right": {
+        "above the cap": [
+          0.1,
+          0.0
+        ],
+        "around the cap": [
+          0.1,
+          0.0
+        ],
+        "grip": [
+          0.0,
+          0.0
+        ],
+        "pull": [
+          0.1,
+          0.0
+        ],
+        "lift": [
+          0.1,
+          0.0
+        ],
+        "approach": [
+          15.0,
+          4.7
+        ],
+        "hover": [
+          0.1,
+          0.0
+        ],
+        "insert": [
+          0.1,
+          0.0
+        ],
+        "ramp out": [
+          0.1,
+          0.0
+        ],
+        "circle": [
+          0.1,
+          0.0
+        ],
+        "ramp in": [
+          0.0,
+          0.0
+        ],
+        "withdraw": [
+          0.0,
+          0.0
+        ],
+        "away": [
+          0.0,
+          0.0
+        ],
+        "turn": [
+          12.7,
+          4.0
+        ],
+        "align": [
+          0.1,
+          0.0
+        ],
+        "enter": [
+          0.1,
+          0.0
+        ],
+        "push": [
+          0.1,
+          0.0
+        ],
+        "press": [
+          0.0,
+          0.0
+        ],
+        "release": [
+          0.0,
+          0.0
+        ],
+        "retreat": [
+          0.1,
+          0.0
+        ],
+        "clear": [
+          0.1,
+          0.0
+        ],
+        "wait": [
+          0.1,
+          0.0
+        ]
+      }
+    },
+    "tracking_mm": {
+      "left": {
+        "left: wait": 7.7,
+        "left: above the tube": 7.9,
+        "left: around the tube": 7.9,
+        "left: grip": 3.8,
+        "left: hold": 8.0,
+        "left: let go": 17.0,
+        "left: up": 23.8,
+        "left: back": 10.7
+      },
+      "right": {
+        "swab: above the cap": 7.8,
+        "swab: around the cap": 6.4,
+        "swab: grip": 2.4,
+        "swab: pull": 14.3,
+        "swab: lift": 5.7,
+        "left: approach": 28.6,
+        "left: hover": 22.4,
+        "left: insert": 15.4,
+        "left: ramp out": 8.4,
+        "left: circle": 10.9,
+        "left: ramp in": 10.5,
+        "left: withdraw": 8.6,
+        "right: approach": 11.3,
+        "right: hover": 10.2,
+        "right: insert": 10.5,
+        "right: ramp out": 11.1,
+        "right: circle": 12.6,
+        "right: ramp in": 11.8,
+        "right: withdraw": 10.1,
+        "tube: away": 5.6,
+        "tube: turn": 53.5,
+        "tube: align": 17.4,
+        "tube: enter": 5.5,
+        "tube: push": 14.1,
+        "tube: press": 14.1,
+        "tube: release": 13.5,
+        "tube: retreat": 11.9,
+        "tube: clear": 11.7,
+        "tube: wait": 6.9
+      }
+    }
+  },
+  "one_spot": {
+    "variant": "one_spot",
+    "task_score": 0.021,
+    "success": false,
+    "steps": 1573,
+    "plan_s": 78.6,
+    "report": {
+      "nostrils": {
+        "left": {
+          "circles": 0.25,
+          "share": 0.92,
+          "credit": 0.021,
+          "sectors": 4,
+          "depth_steps": 349,
+          "contact_steps": 320,
+          "moving_steps": 167,
+          "f_median": 0.99,
+          "f_max": 1.7,
+          "depth_max_mm": 14.5
+        },
+        "right": {
+          "circles": 0.25,
+          "share": 0.93,
+          "credit": 0.02,
+          "sectors": 4,
+          "depth_steps": 347,
+          "contact_steps": 323,
+          "moving_steps": 159,
+          "f_median": 1.11,
+          "f_max": 1.76,
+          "depth_max_mm": 13.8
+        }
+      },
+      "tip_touched": null,
+      "too_deep": false,
+      "dropped": false,
+      "too_hard": false,
+      "cap_gap_mm": 0.6,
+      "cap_aligned": true,
+      "cap_seated": true,
+      "cap_latched": true,
+      "swab_removed": true,
+      "push_n": 0.05,
+      "push_max_n": 3.4,
+      "push_steps_max": 33,
+      "cap_home_step": 1333,
+      "cap_home_steps": 241,
+      "swab_held": false,
+      "wall_force": {
+        "left": 0.0,
+        "right": 0.0
+      },
+      "kit_shift_mm": 9.5
+    },
+    "phases": {
+      "left": [
+        [
+          "left: wait",
+          0.0,
+          1.5
+        ],
+        [
+          "left: above the tube",
+          1.5,
+          3.5
+        ],
+        [
+          "left: around the tube",
+          3.5,
+          4.7
+        ],
+        [
+          "left: grip",
+          4.7,
+          5.5
+        ],
+        [
+          "left: hold",
+          5.5,
+          8.5
+        ],
+        [
+          "left: let go",
+          8.5,
+          9.1
+        ],
+        [
+          "left: up",
+          9.1,
+          10.6
+        ],
+        [
+          "left: back",
+          10.6,
+          13.1
+        ],
+        [
+          "left: wait",
+          13.1,
+          56.9
+        ],
+        [
+          "left: above the tube",
+          56.9,
+          59.4
+        ],
+        [
+          "left: around the tube",
+          59.4,
+          60.6
+        ],
+        [
+          "left: grip",
+          60.6,
+          61.4
+        ],
+        [
+          "left: hold",
+          61.4,
+          67.3
+        ],
+        [
+          "left: let go",
+          67.3,
+          67.9
+        ],
+        [
+          "left: up",
+          67.9,
+          68.7
+        ],
+        [
+          "left: back",
+          68.7,
+          70.3
+        ],
+        [
+          "left: wait",
+          70.3,
+          76.6
+        ]
+      ],
+      "right": [
+        [
+          "swab: above the cap",
+          0.0,
+          3.0
+        ],
+        [
+          "swab: around the cap",
+          3.0,
+          4.5
+        ],
+        [
+          "swab: grip",
+          4.5,
+          5.5
+        ],
+        [
+          "swab: pull",
+          5.5,
+          8.0
+        ],
+        [
+          "swab: lift",
+          8.0,
+          9.0
+        ],
+        [
+          "left: approach",
+          9.0,
+          12.0
+        ],
+        [
+          "left: hover",
+          12.0,
+          13.5
+        ],
+        [
+          "left: insert",
+          13.5,
+          15.0
+        ],
+        [
+          "left: ramp out",
+          15.0,
+          15.6
+        ],
+        [
+          "left: circle",
+          15.6,
+          31.2
+        ],
+        [
+          "left: ramp in",
+          31.2,
+          31.7
+        ],
+        [
+          "left: withdraw",
+          31.7,
+          32.7
+        ],
+        [
+          "right: approach",
+          32.7,
+          34.7
+        ],
+        [
+          "right: hover",
+          34.7,
+          36.2
+        ],
+        [
+          "right: insert",
+          36.2,
+          37.7
+        ],
+        [
+          "right: ramp out",
+          37.7,
+          38.3
+        ],
+        [
+          "right: circle",
+          38.3,
+          53.9
+        ],
+        [
+          "right: ramp in",
+          53.9,
+          54.4
+        ],
+        [
+          "right: withdraw",
+          54.4,
+          55.4
+        ],
+        [
+          "tube: away",
+          55.4,
+          56.4
+        ],
+        [
+          "tube: turn",
+          56.4,
+          59.4
+        ],
+        [
+          "tube: align",
+          59.4,
+          61.4
+        ],
+        [
+          "tube: enter",
+          61.4,
+          64.4
+        ],
+        [
+          "tube: push",
+          64.4,
+          65.4
+        ],
+        [
+          "tube: press",
+          65.4,
+          66.4
+        ],
+        [
+          "tube: release",
+          66.4,
+          67.0
+        ],
+        [
+          "tube: retreat",
+          67.0,
+          67.6
+        ],
+        [
+          "tube: clear",
+          67.6,
+          68.6
+        ],
+        [
+          "tube: wait",
+          68.6,
+          76.6
+        ]
+      ]
+    },
+    "worst_ik": {
+      "left": {
+        "wait": [
+          0.0,
+          0.0
+        ],
+        "above the tube": [
+          0.1,
+          0.0
+        ],
+        "around the tube": [
+          0.1,
+          0.0
+        ],
+        "grip": [
+          0.0,
+          0.0
+        ],
+        "hold": [
+          0.0,
+          0.0
+        ],
+        "let go": [
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.1,
+          0.0
+        ],
+        "back": [
+          0.1,
+          0.0
+        ],
+        "done": [
+          0.0,
+          0.0
+        ]
+      },
+      "right": {
+        "above the cap": [
+          0.1,
+          0.0
+        ],
+        "around the cap": [
+          0.1,
+          0.0
+        ],
+        "grip": [
+          0.0,
+          0.0
+        ],
+        "pull": [
+          0.1,
+          0.0
+        ],
+        "lift": [
+          0.1,
+          0.0
+        ],
+        "approach": [
+          15.0,
+          4.7
+        ],
+        "hover": [
+          0.1,
+          0.0
+        ],
+        "insert": [
+          0.1,
+          0.0
+        ],
+        "ramp out": [
+          0.1,
+          0.0
+        ],
+        "circle": [
+          0.1,
+          0.0
+        ],
+        "ramp in": [
+          0.0,
+          0.0
+        ],
+        "withdraw": [
+          0.0,
+          0.0
+        ],
+        "away": [
+          0.0,
+          0.0
+        ],
+        "turn": [
+          12.7,
+          4.0
+        ],
+        "align": [
+          0.1,
+          0.0
+        ],
+        "enter": [
+          0.1,
+          0.0
+        ],
+        "push": [
+          0.1,
+          0.0
+        ],
+        "press": [
+          0.0,
+          0.0
+        ],
+        "release": [
+          0.0,
+          0.0
+        ],
+        "retreat": [
+          0.1,
+          0.0
+        ],
+        "clear": [
+          0.1,
+          0.0
+        ],
+        "wait": [
+          0.1,
+          0.0
+        ],
+        "done": [
+          0.1,
+          0.0
+        ]
+      }
+    },
+    "tracking_mm": {
+      "left": {
+        "left: wait": 7.8,
+        "left: above the tube": 7.9,
+        "left: around the tube": 7.9,
+        "left: grip": 3.8,
+        "left: hold": 8.8,
+        "left: let go": 17.8,
+        "left: up": 25.8,
+        "left: back": 10.4,
+        "done": 0.6
+      },
+      "right": {
+        "swab: above the cap": 7.8,
+        "swab: around the cap": 6.4,
+        "swab: grip": 2.4,
+        "swab: pull": 14.3,
+        "swab: lift": 5.7,
+        "left: approach": 28.6,
+        "left: hover": 22.4,
+        "left: insert": 15.4,
+        "left: ramp out": 8.4,
+        "left: circle": 10.2,
+        "left: ramp in": 9.5,
+        "left: withdraw": 8.6,
+        "right: approach": 10.2,
+        "right: hover": 7.8,
+        "right: insert": 8.6,
+        "right: ramp out": 8.6,
+        "right: circle": 9.6,
+        "right: ramp in": 9.1,
+        "right: withdraw": 8.0,
+        "tube: away": 4.5,
+        "tube: turn": 53.6,
+        "tube: align": 17.5,
+        "tube: enter": 4.9,
+        "tube: push": 13.4,
+        "tube: press": 13.5,
+        "tube: release": 13.9,
+        "tube: retreat": 12.2,
+        "tube: clear": 12.3,
+        "tube: wait": 6.8,
+        "done": 1.1
+      }
+    }
+  },
+  "light": {
+    "variant": "light",
+    "task_score": 0.003,
+    "success": false,
+    "steps": 1573,
+    "plan_s": 78.6,
+    "report": {
+      "nostrils": {
+        "left": {
+          "circles": 1.24,
+          "share": 0.12,
+          "credit": 0.004,
+          "sectors": 7,
+          "depth_steps": 349,
+          "contact_steps": 42,
+          "moving_steps": 23,
+          "f_median": 0.37,
+          "f_max": 0.76,
+          "depth_max_mm": 14.3
+        },
+        "right": {
+          "circles": 0.17,
+          "share": 0.22,
+          "credit": 0.001,
+          "sectors": 5,
+          "depth_steps": 347,
+          "contact_steps": 77,
+          "moving_steps": 35,
+          "f_median": 0.41,
+          "f_max": 1.12,
+          "depth_max_mm": 13.4
+        }
+      },
+      "tip_touched": null,
+      "too_deep": false,
+      "dropped": false,
+      "too_hard": false,
+      "cap_gap_mm": 0.2,
+      "cap_aligned": true,
+      "cap_seated": true,
+      "cap_latched": true,
+      "swab_removed": true,
+      "push_n": 0.05,
+      "push_max_n": 3.61,
+      "push_steps_max": 33,
+      "cap_home_step": 1333,
+      "cap_home_steps": 241,
+      "swab_held": false,
+      "wall_force": {
+        "left": 0.0,
+        "right": 0.0
+      },
+      "kit_shift_mm": 9.8
+    },
+    "phases": {
+      "left": [
+        [
+          "left: wait",
+          0.0,
+          1.5
+        ],
+        [
+          "left: above the tube",
+          1.5,
+          3.5
+        ],
+        [
+          "left: around the tube",
+          3.5,
+          4.7
+        ],
+        [
+          "left: grip",
+          4.7,
+          5.5
+        ],
+        [
+          "left: hold",
+          5.5,
+          8.5
+        ],
+        [
+          "left: let go",
+          8.5,
+          9.1
+        ],
+        [
+          "left: up",
+          9.1,
+          10.6
+        ],
+        [
+          "left: back",
+          10.6,
+          13.1
+        ],
+        [
+          "left: wait",
+          13.1,
+          56.9
+        ],
+        [
+          "left: above the tube",
+          56.9,
+          59.4
+        ],
+        [
+          "left: around the tube",
+          59.4,
+          60.6
+        ],
+        [
+          "left: grip",
+          60.6,
+          61.4
+        ],
+        [
+          "left: hold",
+          61.4,
+          67.3
+        ],
+        [
+          "left: let go",
+          67.3,
+          67.9
+        ],
+        [
+          "left: up",
+          67.9,
+          68.7
+        ],
+        [
+          "left: back",
+          68.7,
+          70.3
+        ],
+        [
+          "left: wait",
+          70.3,
+          76.6
+        ]
+      ],
+      "right": [
+        [
+          "swab: above the cap",
+          0.0,
+          3.0
+        ],
+        [
+          "swab: around the cap",
+          3.0,
+          4.5
+        ],
+        [
+          "swab: grip",
+          4.5,
+          5.5
+        ],
+        [
+          "swab: pull",
+          5.5,
+          8.0
+        ],
+        [
+          "swab: lift",
+          8.0,
+          9.0
+        ],
+        [
+          "left: approach",
+          9.0,
+          12.0
+        ],
+        [
+          "left: hover",
+          12.0,
+          13.5
+        ],
+        [
+          "left: insert",
+          13.5,
+          15.0
+        ],
+        [
+          "left: ramp out",
+          15.0,
+          15.6
+        ],
+        [
+          "left: circle",
+          15.6,
+          31.2
+        ],
+        [
+          "left: ramp in",
+          31.2,
+          31.7
+        ],
+        [
+          "left: withdraw",
+          31.7,
+          32.7
+        ],
+        [
+          "right: approach",
+          32.7,
+          34.7
+        ],
+        [
+          "right: hover",
+          34.7,
+          36.2
+        ],
+        [
+          "right: insert",
+          36.2,
+          37.7
+        ],
+        [
+          "right: ramp out",
+          37.7,
+          38.3
+        ],
+        [
+          "right: circle",
+          38.3,
+          53.9
+        ],
+        [
+          "right: ramp in",
+          53.9,
+          54.4
+        ],
+        [
+          "right: withdraw",
+          54.4,
+          55.4
+        ],
+        [
+          "tube: away",
+          55.4,
+          56.4
+        ],
+        [
+          "tube: turn",
+          56.4,
+          59.4
+        ],
+        [
+          "tube: align",
+          59.4,
+          61.4
+        ],
+        [
+          "tube: enter",
+          61.4,
+          64.4
+        ],
+        [
+          "tube: push",
+          64.4,
+          65.4
+        ],
+        [
+          "tube: press",
+          65.4,
+          66.4
+        ],
+        [
+          "tube: release",
+          66.4,
+          67.0
+        ],
+        [
+          "tube: retreat",
+          67.0,
+          67.6
+        ],
+        [
+          "tube: clear",
+          67.6,
+          68.6
+        ],
+        [
+          "tube: wait",
+          68.6,
+          76.6
+        ]
+      ]
+    },
+    "worst_ik": {
+      "left": {
+        "wait": [
+          0.0,
+          0.0
+        ],
+        "above the tube": [
+          0.1,
+          0.0
+        ],
+        "around the tube": [
+          0.1,
+          0.0
+        ],
+        "grip": [
+          0.0,
+          0.0
+        ],
+        "hold": [
+          0.0,
+          0.0
+        ],
+        "let go": [
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.1,
+          0.0
+        ],
+        "back": [
+          0.1,
+          0.0
+        ],
+        "done": [
+          0.0,
+          0.0
+        ]
+      },
+      "right": {
+        "above the cap": [
+          0.1,
+          0.0
+        ],
+        "around the cap": [
+          0.1,
+          0.0
+        ],
+        "grip": [
+          0.0,
+          0.0
+        ],
+        "pull": [
+          0.1,
+          0.0
+        ],
+        "lift": [
+          0.1,
+          0.0
+        ],
+        "approach": [
+          15.0,
+          4.7
+        ],
+        "hover": [
+          0.1,
+          0.0
+        ],
+        "insert": [
+          0.1,
+          0.0
+        ],
+        "ramp out": [
+          0.1,
+          0.0
+        ],
+        "circle": [
+          0.1,
+          0.0
+        ],
+        "ramp in": [
+          0.0,
+          0.0
+        ],
+        "withdraw": [
+          0.0,
+          0.0
+        ],
+        "away": [
+          0.0,
+          0.0
+        ],
+        "turn": [
+          12.7,
+          4.0
+        ],
+        "align": [
+          0.1,
+          0.0
+        ],
+        "enter": [
+          0.1,
+          0.0
+        ],
+        "push": [
+          0.1,
+          0.0
+        ],
+        "press": [
+          0.0,
+          0.0
+        ],
+        "release": [
+          0.0,
+          0.0
+        ],
+        "retreat": [
+          0.1,
+          0.0
+        ],
+        "clear": [
+          0.1,
+          0.0
+        ],
+        "wait": [
+          0.1,
+          0.0
+        ],
+        "done": [
+          0.1,
+          0.0
+        ]
+      }
+    },
+    "tracking_mm": {
+      "left": {
+        "left: wait": 7.8,
+        "left: above the tube": 7.9,
+        "left: around the tube": 7.9,
+        "left: grip": 3.8,
+        "left: hold": 8.9,
+        "left: let go": 17.9,
+        "left: up": 25.9,
+        "left: back": 10.4,
+        "done": 0.6
+      },
+      "right": {
+        "swab: above the cap": 7.8,
+        "swab: around the cap": 6.4,
+        "swab: grip": 2.4,
+        "swab: pull": 14.3,
+        "swab: lift": 5.7,
+        "left: approach": 28.6,
+        "left: hover": 22.4,
+        "left: insert": 15.4,
+        "left: ramp out": 8.5,
+        "left: circle": 8.6,
+        "left: ramp in": 8.5,
+        "left: withdraw": 8.6,
+        "right: approach": 8.8,
+        "right: hover": 7.8,
+        "right: insert": 8.0,
+        "right: ramp out": 7.5,
+        "right: circle": 8.5,
+        "right: ramp in": 8.4,
+        "right: withdraw": 8.3,
+        "tube: away": 5.0,
+        "tube: turn": 53.5,
+        "tube: align": 17.5,
+        "tube: enter": 5.1,
+        "tube: push": 13.5,
+        "tube: press": 13.6,
+        "tube: release": 13.7,
+        "tube: retreat": 12.0,
+        "tube: clear": 12.2,
+        "tube: wait": 6.8,
+        "done": 1.0
+      }
+    }
+  },
+  "one_nostril": {
+    "variant": "one_nostril",
+    "task_score": 0.5,
+    "success": false,
+    "steps": 1118,
+    "plan_s": 55.9,
+    "report": {
+      "nostrils": {
+        "left": {
+          "circles": 6.0,
+          "share": 0.84,
+          "credit": 1.0,
+          "sectors": 12,
+          "depth_steps": 349,
+          "contact_steps": 293,
+          "moving_steps": 225,
+          "f_median": 0.99,
+          "f_max": 2.55,
+          "depth_max_mm": 14.2
+        },
+        "right": {
+          "circles": 0.0,
+          "share": 0.0,
+          "credit": 0.0,
+          "sectors": 0,
+          "depth_steps": 0,
+          "contact_steps": 0,
+          "moving_steps": 0,
+          "f_median": 0.0,
+          "f_max": 0.0,
+          "depth_max_mm": 0.0
+        }
+      },
+      "tip_touched": null,
+      "too_deep": false,
+      "dropped": false,
+      "too_hard": false,
+      "cap_gap_mm": 0.2,
+      "cap_aligned": true,
+      "cap_seated": true,
+      "cap_latched": true,
+      "swab_removed": true,
+      "push_n": 0.05,
+      "push_max_n": 3.89,
+      "push_steps_max": 33,
+      "cap_home_step": 879,
+      "cap_home_steps": 240,
+      "swab_held": false,
+      "wall_force": {
+        "left": 0.0,
+        "right": 0.0
+      },
+      "kit_shift_mm": 7.2
+    },
+    "phases": {
+      "left": [
+        [
+          "left: wait",
+          0.0,
+          1.5
+        ],
+        [
+          "left: above the tube",
+          1.5,
+          3.5
+        ],
+        [
+          "left: around the tube",
+          3.5,
+          4.7
+        ],
+        [
+          "left: grip",
+          4.7,
+          5.5
+        ],
+        [
+          "left: hold",
+          5.5,
+          8.5
+        ],
+        [
+          "left: let go",
+          8.5,
+          9.1
+        ],
+        [
+          "left: up",
+          9.1,
+          10.6
+        ],
+        [
+          "left: back",
+          10.6,
+          13.1
+        ],
+        [
+          "left: wait",
+          13.1,
+          34.2
+        ],
+        [
+          "left: above the tube",
+          34.2,
+          36.7
+        ],
+        [
+          "left: around the tube",
+          36.7,
+          37.9
+        ],
+        [
+          "left: grip",
+          37.9,
+          38.7
+        ],
+        [
+          "left: hold",
+          38.7,
+          44.6
+        ],
+        [
+          "left: let go",
+          44.6,
+          45.2
+        ],
+        [
+          "left: up",
+          45.2,
+          46.0
+        ],
+        [
+          "left: back",
+          46.0,
+          47.6
+        ],
+        [
+          "left: wait",
+          47.6,
+          53.9
+        ]
+      ],
+      "right": [
+        [
+          "swab: above the cap",
+          0.0,
+          3.0
+        ],
+        [
+          "swab: around the cap",
+          3.0,
+          4.5
+        ],
+        [
+          "swab: grip",
+          4.5,
+          5.5
+        ],
+        [
+          "swab: pull",
+          5.5,
+          8.0
+        ],
+        [
+          "swab: lift",
+          8.0,
+          9.0
+        ],
+        [
+          "left: approach",
+          9.0,
+          12.0
+        ],
+        [
+          "left: hover",
+          12.0,
+          13.5
+        ],
+        [
+          "left: insert",
+          13.5,
+          15.0
+        ],
+        [
+          "left: ramp out",
+          15.0,
+          15.6
+        ],
+        [
+          "left: circle",
+          15.6,
+          31.2
+        ],
+        [
+          "left: ramp in",
+          31.2,
+          31.7
+        ],
+        [
+          "left: withdraw",
+          31.7,
+          32.7
+        ],
+        [
+          "tube: away",
+          32.7,
+          33.7
+        ],
+        [
+          "tube: turn",
+          33.7,
+          36.7
+        ],
+        [
+          "tube: align",
+          36.7,
+          38.7
+        ],
+        [
+          "tube: enter",
+          38.7,
+          41.7
+        ],
+        [
+          "tube: push",
+          41.7,
+          42.7
+        ],
+        [
+          "tube: press",
+          42.7,
+          43.7
+        ],
+        [
+          "tube: release",
+          43.7,
+          44.3
+        ],
+        [
+          "tube: retreat",
+          44.3,
+          44.9
+        ],
+        [
+          "tube: clear",
+          44.9,
+          45.9
+        ],
+        [
+          "tube: wait",
+          45.9,
+          53.9
+        ]
+      ]
+    },
+    "worst_ik": {
+      "left": {
+        "wait": [
+          0.0,
+          0.0
+        ],
+        "above the tube": [
+          0.1,
+          0.0
+        ],
+        "around the tube": [
+          0.1,
+          0.0
+        ],
+        "grip": [
+          0.0,
+          0.0
+        ],
+        "hold": [
+          0.0,
+          0.0
+        ],
+        "let go": [
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.1,
+          0.0
+        ],
+        "back": [
+          0.1,
+          0.0
+        ],
+        "done": [
+          0.0,
+          0.0
+        ]
+      },
+      "right": {
+        "above the cap": [
+          0.1,
+          0.0
+        ],
+        "around the cap": [
+          0.1,
+          0.0
+        ],
+        "grip": [
+          0.0,
+          0.0
+        ],
+        "pull": [
+          0.1,
+          0.0
+        ],
+        "lift": [
+          0.1,
+          0.0
+        ],
+        "approach": [
+          15.0,
+          4.7
+        ],
+        "hover": [
+          0.1,
+          0.0
+        ],
+        "insert": [
+          0.1,
+          0.0
+        ],
+        "ramp out": [
+          0.1,
+          0.0
+        ],
+        "circle": [
+          0.1,
+          0.0
+        ],
+        "ramp in": [
+          0.0,
+          0.0
+        ],
+        "withdraw": [
+          0.0,
+          0.0
+        ],
+        "away": [
+          0.0,
+          0.0
+        ],
+        "turn": [
+          17.8,
+          5.7
+        ],
+        "align": [
+          0.1,
+          0.0
+        ],
+        "enter": [
+          0.1,
+          0.0
+        ],
+        "push": [
+          0.1,
+          0.0
+        ],
+        "press": [
+          0.0,
+          0.0
+        ],
+        "release": [
+          0.0,
+          0.0
+        ],
+        "retreat": [
+          0.1,
+          0.0
+        ],
+        "clear": [
+          0.1,
+          0.0
+        ],
+        "wait": [
+          0.1,
+          0.0
+        ],
+        "done": [
+          0.1,
+          0.0
+        ]
+      }
+    },
+    "tracking_mm": {
+      "left": {
+        "left: wait": 7.7,
+        "left: above the tube": 7.9,
+        "left: around the tube": 7.9,
+        "left: grip": 3.8,
+        "left: hold": 6.8,
+        "left: let go": 16.2,
+        "left: up": 22.2,
+        "left: back": 10.8,
+        "done": 0.6
+      },
+      "right": {
+        "swab: above the cap": 7.8,
+        "swab: around the cap": 6.4,
+        "swab: grip": 2.4,
+        "swab: pull": 14.3,
+        "swab: lift": 5.7,
+        "left: approach": 28.6,
+        "left: hover": 22.4,
+        "left: insert": 15.4,
+        "left: ramp out": 8.4,
+        "left: circle": 10.9,
+        "left: ramp in": 10.5,
+        "left: withdraw": 8.6,
+        "tube: away": 4.6,
+        "tube: turn": 54.7,
+        "tube: align": 20.6,
+        "tube: enter": 5.9,
+        "tube: push": 14.5,
+        "tube: press": 14.7,
+        "tube: release": 14.6,
+        "tube: retreat": 11.6,
+        "tube: clear": 11.4,
+        "tube: wait": 6.9,
+        "done": 1.0
+      }
+    }
+  },
+  "lip": {
+    "variant": "lip",
+    "task_score": 0.0,
+    "success": false,
+    "steps": 1696,
+    "plan_s": 84.8,
+    "report": {
+      "nostrils": {
+        "left": {
+          "circles": 5.03,
+          "share": 0.84,
+          "credit": 1.0,
+          "sectors": 12,
+          "depth_steps": 347,
+          "contact_steps": 290,
+          "moving_steps": 229,
+          "f_median": 1.19,
+          "f_max": 2.17,
+          "depth_max_mm": 13.5
+        },
+        "right": {
+          "circles": 6.5,
+          "share": 0.92,
+          "credit": 1.0,
+          "sectors": 12,
+          "depth_steps": 347,
+          "contact_steps": 320,
+          "moving_steps": 274,
+          "f_median": 1.19,
+          "f_max": 1.89,
+          "depth_max_mm": 13.5
+        }
+      },
+      "tip_touched": "face",
+      "too_deep": false,
+      "dropped": false,
+      "too_hard": false,
+      "cap_gap_mm": 0.5,
+      "cap_aligned": true,
+      "cap_seated": true,
+      "cap_latched": true,
+      "swab_removed": true,
+      "push_n": 0.05,
+      "push_max_n": 3.02,
+      "push_steps_max": 19,
+      "cap_home_step": 1457,
+      "cap_home_steps": 240,
+      "swab_held": false,
+      "wall_force": {
+        "left": 0.0,
+        "right": 0.0
+      },
+      "kit_shift_mm": 8.9
+    },
+    "phases": {
+      "left": [
+        [
+          "left: wait",
+          0.0,
+          1.5
+        ],
+        [
+          "left: above the tube",
+          1.5,
+          3.5
+        ],
+        [
+          "left: around the tube",
+          3.5,
+          4.7
+        ],
+        [
+          "left: grip",
+          4.7,
+          5.5
+        ],
+        [
+          "left: hold",
+          5.5,
+          8.5
+        ],
+        [
+          "left: let go",
+          8.5,
+          9.1
+        ],
+        [
+          "left: up",
+          9.1,
+          10.6
+        ],
+        [
+          "left: back",
+          10.6,
+          13.1
+        ],
+        [
+          "left: wait",
+          13.1,
+          63.1
+        ],
+        [
+          "left: above the tube",
+          63.1,
+          65.6
+        ],
+        [
+          "left: around the tube",
+          65.6,
+          66.8
+        ],
+        [
+          "left: grip",
+          66.8,
+          67.6
+        ],
+        [
+          "left: hold",
+          67.6,
+          73.5
+        ],
+        [
+          "left: let go",
+          73.5,
+          74.1
+        ],
+        [
+          "left: up",
+          74.1,
+          74.9
+        ],
+        [
+          "left: back",
+          74.9,
+          76.5
+        ],
+        [
+          "left: wait",
+          76.5,
+          82.8
+        ]
+      ],
+      "right": [
+        [
+          "swab: above the cap",
+          0.0,
+          3.0
+        ],
+        [
+          "swab: around the cap",
+          3.0,
+          4.5
+        ],
+        [
+          "swab: grip",
+          4.5,
+          5.5
+        ],
+        [
+          "swab: pull",
+          5.5,
+          8.0
+        ],
+        [
+          "swab: lift",
+          8.0,
+          9.0
+        ],
+        [
+          "lip: above the lip",
+          9.0,
+          12.0
+        ],
+        [
+          "lip: settle",
+          12.0,
+          13.0
+        ],
+        [
+          "lip: touch",
+          13.0,
+          14.2
+        ],
+        [
+          "lip: lift",
+          14.2,
+          15.2
+        ],
+        [
+          "left: approach",
+          15.2,
+          18.2
+        ],
+        [
+          "left: hover",
+          18.2,
+          19.7
+        ],
+        [
+          "left: insert",
+          19.7,
+          21.2
+        ],
+        [
+          "left: ramp out",
+          21.2,
+          21.8
+        ],
+        [
+          "left: circle",
+          21.8,
+          37.4
+        ],
+        [
+          "left: ramp in",
+          37.4,
+          37.9
+        ],
+        [
+          "left: withdraw",
+          37.9,
+          38.9
+        ],
+        [
+          "right: approach",
+          38.9,
+          40.9
+        ],
+        [
+          "right: hover",
+          40.9,
+          42.4
+        ],
+        [
+          "right: insert",
+          42.4,
+          43.9
+        ],
+        [
+          "right: ramp out",
+          43.9,
+          44.5
+        ],
+        [
+          "right: circle",
+          44.5,
+          60.1
+        ],
+        [
+          "right: ramp in",
+          60.1,
+          60.6
+        ],
+        [
+          "right: withdraw",
+          60.6,
+          61.6
+        ],
+        [
+          "tube: away",
+          61.6,
+          62.6
+        ],
+        [
+          "tube: turn",
+          62.6,
+          65.6
+        ],
+        [
+          "tube: align",
+          65.6,
+          67.6
+        ],
+        [
+          "tube: enter",
+          67.6,
+          70.6
+        ],
+        [
+          "tube: push",
+          70.6,
+          71.6
+        ],
+        [
+          "tube: press",
+          71.6,
+          72.6
+        ],
+        [
+          "tube: release",
+          72.6,
+          73.2
+        ],
+        [
+          "tube: retreat",
+          73.2,
+          73.8
+        ],
+        [
+          "tube: clear",
+          73.8,
+          74.8
+        ],
+        [
+          "tube: wait",
+          74.8,
+          82.8
+        ]
+      ]
+    },
+    "worst_ik": {
+      "left": {
+        "wait": [
+          0.0,
+          0.0
+        ],
+        "above the tube": [
+          0.1,
+          0.0
+        ],
+        "around the tube": [
+          0.1,
+          0.0
+        ],
+        "grip": [
+          0.0,
+          0.0
+        ],
+        "hold": [
+          0.0,
+          0.0
+        ],
+        "let go": [
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.1,
+          0.0
+        ],
+        "back": [
+          0.1,
+          0.0
+        ],
+        "done": [
+          0.0,
+          0.0
+        ]
+      },
+      "right": {
+        "above the cap": [
+          0.1,
+          0.0
+        ],
+        "around the cap": [
+          0.1,
+          0.0
+        ],
+        "grip": [
+          0.0,
+          0.0
+        ],
+        "pull": [
+          0.1,
+          0.0
+        ],
+        "lift": [
+          0.1,
+          0.0
+        ],
+        "above the lip": [
+          10.1,
+          3.2
+        ],
+        "settle": [
+          0.1,
+          0.0
+        ],
+        "touch": [
+          0.0,
+          0.0
+        ],
+        "approach": [
+          0.1,
+          0.0
+        ],
+        "hover": [
+          0.1,
+          0.0
+        ],
+        "insert": [
+          0.1,
+          0.0
+        ],
+        "ramp out": [
+          0.0,
+          0.0
+        ],
+        "circle": [
+          0.1,
+          0.0
+        ],
+        "ramp in": [
+          0.0,
+          0.0
+        ],
+        "withdraw": [
+          0.0,
+          0.0
+        ],
+        "away": [
+          0.0,
+          0.0
+        ],
+        "turn": [
+          12.7,
+          4.0
+        ],
+        "align": [
+          0.1,
+          0.0
+        ],
+        "enter": [
+          0.1,
+          0.0
+        ],
+        "push": [
+          0.1,
+          0.0
+        ],
+        "press": [
+          0.0,
+          0.0
+        ],
+        "release": [
+          0.0,
+          0.0
+        ],
+        "retreat": [
+          0.1,
+          0.0
+        ],
+        "clear": [
+          0.1,
+          0.0
+        ],
+        "wait": [
+          0.1,
+          0.0
+        ],
+        "done": [
+          0.1,
+          0.0
+        ]
+      }
+    },
+    "tracking_mm": {
+      "left": {
+        "left: wait": 7.7,
+        "left: above the tube": 7.9,
+        "left: around the tube": 7.9,
+        "left: grip": 3.8,
+        "left: hold": 8.1,
+        "left: let go": 17.4,
+        "left: up": 25.6,
+        "left: back": 10.7,
+        "done": 0.5
+      },
+      "right": {
+        "swab: above the cap": 7.8,
+        "swab: around the cap": 6.4,
+        "swab: grip": 2.4,
+        "swab: pull": 14.3,
+        "swab: lift": 5.7,
+        "lip: above the lip": 27.9,
+        "lip: settle": 21.4,
+        "lip: touch": 23.8,
+        "lip: lift": 30.4,
+        "left: approach": 29.3,
+        "left: hover": 5.7,
+        "left: insert": 5.8,
+        "left: ramp out": 6.6,
+        "left: circle": 9.0,
+        "left: ramp in": 8.3,
+        "left: withdraw": 5.4,
+        "right: approach": 9.4,
+        "right: hover": 9.8,
+        "right: insert": 8.8,
+        "right: ramp out": 10.2,
+        "right: circle": 11.3,
+        "right: ramp in": 10.5,
+        "right: withdraw": 8.8,
+        "tube: away": 4.7,
+        "tube: turn": 53.7,
+        "tube: align": 17.6,
+        "tube: enter": 5.9,
+        "tube: push": 13.3,
+        "tube: press": 13.3,
+        "tube: release": 13.6,
+        "tube: retreat": 12.5,
+        "tube: clear": 12.2,
+        "tube: wait": 7.0,
+        "done": 1.0
+      }
+    }
+  },
+  "one_arm": {
+    "variant": "one_arm",
+    "task_score": 0.4,
+    "success": false,
+    "steps": 1573,
+    "plan_s": 78.6,
+    "report": {
+      "nostrils": {
+        "left": {
+          "circles": 6.5,
+          "share": 0.9,
+          "credit": 1.0,
+          "sectors": 12,
+          "depth_steps": 349,
+          "contact_steps": 315,
+          "moving_steps": 278,
+          "f_median": 0.96,
+          "f_max": 2.24,
+          "depth_max_mm": 14.0
+        },
+        "right": {
+          "circles": 5.93,
+          "share": 0.91,
+          "credit": 1.0,
+          "sectors": 12,
+          "depth_steps": 347,
+          "contact_steps": 315,
+          "moving_steps": 265,
+          "f_median": 1.1,
+          "f_max": 3.03,
+          "depth_max_mm": 12.8
+        }
+      },
+      "tip_touched": null,
+      "too_deep": false,
+      "dropped": false,
+      "too_hard": false,
+      "cap_gap_mm": 5.3,
+      "cap_aligned": true,
+      "cap_seated": false,
+      "cap_latched": false,
+      "swab_removed": true,
+      "push_n": 0.05,
+      "push_max_n": 2.63,
+      "push_steps_max": 0,
+      "cap_home_step": null,
+      "cap_home_steps": 0,
+      "swab_held": false,
+      "wall_force": {
+        "left": 0.0,
+        "right": 0.0
+      },
+      "kit_shift_mm": 40.6
+    },
+    "phases": {
+      "left": [
+        [
+          "left: wait",
+          0.0,
+          76.6
+        ]
+      ],
+      "right": [
+        [
+          "swab: above the cap",
+          0.0,
+          3.0
+        ],
+        [
+          "swab: around the cap",
+          3.0,
+          4.5
+        ],
+        [
+          "swab: grip",
+          4.5,
+          5.5
+        ],
+        [
+          "swab: pull",
+          5.5,
+          8.0
+        ],
+        [
+          "swab: lift",
+          8.0,
+          9.0
+        ],
+        [
+          "left: approach",
+          9.0,
+          12.0
+        ],
+        [
+          "left: hover",
+          12.0,
+          13.5
+        ],
+        [
+          "left: insert",
+          13.5,
+          15.0
+        ],
+        [
+          "left: ramp out",
+          15.0,
+          15.6
+        ],
+        [
+          "left: circle",
+          15.6,
+          31.2
+        ],
+        [
+          "left: ramp in",
+          31.2,
+          31.7
+        ],
+        [
+          "left: withdraw",
+          31.7,
+          32.7
+        ],
+        [
+          "right: approach",
+          32.7,
+          34.7
+        ],
+        [
+          "right: hover",
+          34.7,
+          36.2
+        ],
+        [
+          "right: insert",
+          36.2,
+          37.7
+        ],
+        [
+          "right: ramp out",
+          37.7,
+          38.3
+        ],
+        [
+          "right: circle",
+          38.3,
+          53.9
+        ],
+        [
+          "right: ramp in",
+          53.9,
+          54.4
+        ],
+        [
+          "right: withdraw",
+          54.4,
+          55.4
+        ],
+        [
+          "tube: away",
+          55.4,
+          56.4
+        ],
+        [
+          "tube: turn",
+          56.4,
+          59.4
+        ],
+        [
+          "tube: align",
+          59.4,
+          61.4
+        ],
+        [
+          "tube: enter",
+          61.4,
+          64.4
+        ],
+        [
+          "tube: push",
+          64.4,
+          65.4
+        ],
+        [
+          "tube: press",
+          65.4,
+          66.4
+        ],
+        [
+          "tube: release",
+          66.4,
+          67.0
+        ],
+        [
+          "tube: retreat",
+          67.0,
+          67.6
+        ],
+        [
+          "tube: clear",
+          67.6,
+          68.6
+        ],
+        [
+          "tube: wait",
+          68.6,
+          76.6
+        ]
+      ]
+    },
+    "worst_ik": {
+      "left": {
+        "wait": [
+          0.0,
+          0.0
+        ],
+        "done": [
+          0.0,
+          0.0
+        ]
+      },
+      "right": {
+        "above the cap": [
+          0.1,
+          0.0
+        ],
+        "around the cap": [
+          0.1,
+          0.0
+        ],
+        "grip": [
+          0.0,
+          0.0
+        ],
+        "pull": [
+          0.1,
+          0.0
+        ],
+        "lift": [
+          0.1,
+          0.0
+        ],
+        "approach": [
+          11.3,
+          3.5
+        ],
+        "hover": [
+          0.1,
+          0.0
+        ],
+        "insert": [
+          0.1,
+          0.0
+        ],
+        "ramp out": [
+          0.1,
+          0.0
+        ],
+        "circle": [
+          0.1,
+          0.0
+        ],
+        "ramp in": [
+          0.0,
+          0.0
+        ],
+        "withdraw": [
+          0.0,
+          0.0
+        ],
+        "away": [
+          0.0,
+          0.0
+        ],
+        "turn": [
+          12.7,
+          4.0
+        ],
+        "align": [
+          0.1,
+          0.0
+        ],
+        "enter": [
+          0.1,
+          0.0
+        ],
+        "push": [
+          0.1,
+          0.0
+        ],
+        "press": [
+          0.0,
+          0.0
+        ],
+        "release": [
+          0.0,
+          0.0
+        ],
+        "retreat": [
+          0.1,
+          0.0
+        ],
+        "clear": [
+          0.1,
+          0.0
+        ],
+        "wait": [
+          0.1,
+          0.0
+        ],
+        "done": [
+          0.1,
+          0.0
+        ]
+      }
+    },
+    "tracking_mm": {
+      "left": {
+        "left: wait": 0.0,
+        "done": 0.0
+      },
+      "right": {
+        "swab: above the cap": 7.8,
+        "swab: around the cap": 6.4,
+        "swab: grip": 2.4,
+        "swab: pull": 16.6,
+        "swab: lift": 9.8,
+        "left: approach": 31.6,
+        "left: hover": 22.0,
+        "left: insert": 19.8,
+        "left: ramp out": 12.4,
+        "left: circle": 13.0,
+        "left: ramp in": 11.9,
+        "left: withdraw": 11.8,
+        "right: approach": 11.9,
+        "right: hover": 8.1,
+        "right: insert": 9.6,
+        "right: ramp out": 10.5,
+        "right: circle": 11.9,
+        "right: ramp in": 11.0,
+        "right: withdraw": 8.9,
+        "tube: away": 4.7,
+        "tube: turn": 53.6,
+        "tube: align": 17.4,
+        "tube: enter": 5.3,
+        "tube: push": 5.3,
+        "tube: press": 5.9,
+        "tube: release": 5.7,
+        "tube: retreat": 12.0,
+        "tube: clear": 8.5,
+        "tube: wait": 7.5,
+        "done": 0.5
+      }
+    }
+  }
+}
