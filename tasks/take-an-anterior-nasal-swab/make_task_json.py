@@ -70,14 +70,18 @@ task = {
         "20 with its axis 3 cm above the table, its mouth at y -13 (toward the robot's right) and its closed end at "
         "y 3.5; the stand is a 5 cm wide plate under it (y -12.5 to 4.6) with two saddles and an end stop. The swab "
         "lies in the tube, tip first, with its plug-style cap in place as shipped: the plug in the mouth and the "
-        "grip outside (centred at y -14.25)."),
+        "grip outside (centred at y -14.25). Real trials add: the head printed in three parts, its nose insert (both "
+        "nostrils) hanging on two load cells inside it with a 1.6 mm gap all round; an LED taped beside the head (it "
+        "flashes once when the force log starts); and a phone on an overhead holder, lens about 45 cm above the table "
+        "over the face's centre line, 8 to 12 cm toward the chin from the nostrils, checked in the first run to be "
+        "clear of the arms."),
     "scoring": (
         "Every step, from poses, finger-pad points and the PhysX contact points (with per-point normal forces) "
         "between the swab and the head and between the swab and the tube; the score at the end counts. For each "
         "nostril, the tip is at sampling depth when its centre is 0.8 to 1.7 cm in along the nostril's axis (the "
         "whole 1.6 cm tip inside, its end no deeper than 2.5 cm) and within the opening; a step there is pressed "
-        "when the tip's contact force on that nostril's wall is at least 0.2 N (about 20 g, the press the real "
-        "trial's calibrated ink needs). Circles: the larger of the signed angle the tip's centre travels round the "
+        "when the tip's contact force on that nostril's wall is at least 0.2 N (about 20 g). Circles: the larger "
+        "of the signed angle the tip's centre travels round the "
         "nostril's axis over consecutive pressed steps (measured on the ellipse, 360 degrees = once round; a move of "
         "more than 90 degrees between steps does not count; when the tip is pressed again after a lift, the angle "
         "from the last pressed step counts too if it is 90 degrees or less, so an unpressed return cancels its "
@@ -92,10 +96,7 @@ task = {
         "swab within 6 degrees of the tube's axis and its cap within 3 mm of the axis) and pushed with at least 2 N "
         "on 5 consecutive steps (0.25 s) while a finger pad of the other hand is on the tube (within 1.2 cm of its "
         "outside; a free tube slides away, and the compliant simulated arm passes only 2 to 3.5 N through a pinched "
-        "tube), then let go (no finger pad within 1.5 cm of the cap). Real trial: the cap flush on the rim (photo), "
-        "pushed while the other hand holds the tube (video), which takes the real cap's full push; Puritan publishes "
-        "no push force, so push one cap home on a tube standing on a 5 kg / 1 g kitchen scale before the trials and "
-        "record it (a reclosable cap closed by hand is well within the YAM's ~40 N per finger). Score: the mean of "
+        "tube), then let go (no finger pad within 1.5 cm of the cap). Score: the mean of "
         "the two nostril credits, times 1.0 if the cap is home, else 0.4 (an unsealed specimen). 1.0: both nostrils "
         "with at least 4 circles, a share of at least 0.7 and at least 200 moving pressed steps (10 s) and at least "
         "10 sectors, and the cap home and let go; the run is a success (and ends) once the cap has stayed home 9 s. "
@@ -104,13 +105,27 @@ task = {
         "least 0.05 N (the face, the lips, the tube's or stand's outside, the table); a finger pad comes within 2 mm "
         "of the foam while the tip is outside the tube; the tip's end goes deeper than 2.5 cm; or the swab is "
         "dropped (its cap's centre lower than 1.2 cm while not held and not in the tube). A wall force above 5 N is "
-        "reported, not scored (no real trial can read it)."),
+        "reported, not scored. Real trial (README, real_trial/): the nose insert hangs on two load cells inside the "
+        "head that log the net side force on the nose 80 times a second, and real_trial/score_real_trial.py scores the "
+        "log with these numbers, share included, and six stated rule differences (real_trial/README.md): a 0.05 s step "
+        "is pressed at 0.2 N or more, the force's direction gives the tip's angle round the wall, and circles count as "
+        "laps, not signed travel (rubbing friction tilts the force about 22 degrees when a stroke starts or turns back): "
+        "all twelve sectors pressed, or 10 of them over a full turn of pressed travel; a turn of more than 60 degrees "
+        "between pressed steps starts a new lap, as a lift does. The log stands for the foam only while nothing else touches "
+        "the nose, so a gripper, the tube, a cable or the shaft bearing on a rim while a tip is at depth voids that "
+        "nostril. An overhead video gives the at-depth times (the line 1.6 cm from the tip's end past the opening's "
+        "rim, the 2.5 cm line outside), green marker on the foam, a gripper on it or the tip on the table (voided), and "
+        "the cap: flush "
+        "on the rim (photo), pushed while the other hand holds the tube, with the full push one cap needs (measured "
+        "on a kitchen scale before the trials). Logs slower than 80 samples/s, not in newtons or not at zero at both "
+        "ends are refused; one the robot left loaded or knocked off zero scores 0."),
     "run_limit": "2,400 steps (2 minutes at 20 Hz)",
     "reset_notes": (
         "Nothing is consumed in simulation. Put the swab back in its tube with the cap in place as shipped, and the "
         "stand back with the mouth toward the robot's right. Real trials: a new sterile swab per trial (single use); "
-        "wipe the printed nostrils clean, re-ink them with black dry-erase marker (two coats, 2 min drying; repeat "
-        "the 20 g / 5 g stroke test) and renew the green marker on the lip and skin (see README)."),
+        "with the camera recording, start the force log with nothing touching the nose insert (it zeroes both load "
+        "cells and flashes its LED for the video), stop it 2 s after the swab is out, and renew the green marker on the lip, skin, tube and "
+        "stand (see README)."),
     "fidelity": (
         "Rigid bodies. The head is one fixed triangle-mesh shell; the face is simplified, while the nostrils have "
         "adult anterior-nares size and angle (each bore's floor opens toward the lip for its first ~1.3 cm). Foam "
@@ -121,5 +136,9 @@ task = {
 }
 assert len(task["title"]) <= 120 and len(task["context"]) <= 1000 and len(task["fidelity"]) <= 500, \
     (len(task["title"]), len(task["context"]), len(task["fidelity"]))
+try:  # keep the media ID that tools/upload_media.py wrote (the uploaded videos and screenshot still match)
+    task["media"] = json.load(open("task.json"))["media"]
+except (OSError, KeyError, ValueError):
+    pass
 json.dump(task, open("task.json", "w"), indent=2)
 print("task.json written:", len(json.dumps(task)), "chars")

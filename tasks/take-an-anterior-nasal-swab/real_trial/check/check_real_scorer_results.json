@@ -1,0 +1,1809 @@
+[
+ {
+  "group": "basic",
+  "probe": "good",
+  "task_py": {
+   "circles": 5.33,
+   "share": 1.0,
+   "credit": 1.0,
+   "sectors": 12,
+   "depth_steps": 320,
+   "contact_steps": 320,
+   "moving_steps": 319,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 5.5,
+   "travel_turns": 5.03,
+   "share": 1.0,
+   "moving_s": 15.95,
+   "moving_steps": 319,
+   "sectors": 12,
+   "depth_s": 16.0,
+   "pressed_s": 16.0,
+   "credit": 1.0,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "basic",
+  "probe": "reversal",
+  "task_py": {
+   "circles": 4.17,
+   "share": 1.0,
+   "credit": 1.0,
+   "sectors": 12,
+   "depth_steps": 320,
+   "contact_steps": 320,
+   "moving_steps": 319,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 4.25,
+   "travel_turns": -0.03,
+   "share": 1.0,
+   "moving_s": 15.65,
+   "moving_steps": 313,
+   "sectors": 12,
+   "depth_s": 16.0,
+   "pressed_s": 16.0,
+   "credit": 1.0,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "basic",
+  "probe": "still",
+  "task_py": {
+   "circles": 0.0,
+   "share": 1.0,
+   "credit": 0.0,
+   "sectors": 1,
+   "depth_steps": 320,
+   "contact_steps": 320,
+   "moving_steps": 0,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 0.0,
+   "travel_turns": -0.0,
+   "share": 1.0,
+   "moving_s": 0.0,
+   "moving_steps": 0,
+   "sectors": 1,
+   "depth_s": 16.0,
+   "pressed_s": 16.0,
+   "credit": 0.0,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "basic",
+  "probe": "fast_then_still",
+  "task_py": {
+   "circles": 2.0,
+   "share": 1.0,
+   "credit": 0.008,
+   "sectors": 4,
+   "depth_steps": 207,
+   "contact_steps": 207,
+   "moving_steps": 8,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 0.08,
+   "travel_turns": -0.04,
+   "share": 1.0,
+   "moving_s": 0.05,
+   "moving_steps": 1,
+   "sectors": 5,
+   "depth_s": 10.35,
+   "pressed_s": 10.35,
+   "credit": 0.0,
+   "f_median": 1.0,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "basic",
+  "probe": "wiggle",
+  "task_py": {
+   "circles": 0.08,
+   "share": 1.0,
+   "credit": 0.004,
+   "sectors": 2,
+   "depth_steps": 320,
+   "contact_steps": 320,
+   "moving_steps": 319,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 0.25,
+   "travel_turns": 0.02,
+   "share": 1.0,
+   "moving_s": 7.55,
+   "moving_steps": 151,
+   "sectors": 4,
+   "depth_s": 16.0,
+   "pressed_s": 16.0,
+   "credit": 0.019,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "basic",
+  "probe": "ratchet",
+  "task_py": {
+   "circles": 0.08,
+   "share": 0.8,
+   "credit": 0.002,
+   "sectors": 1,
+   "depth_steps": 250,
+   "contact_steps": 200,
+   "moving_steps": 150,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 0.17,
+   "travel_turns": 0.14,
+   "share": 0.83,
+   "moving_s": 7.1,
+   "moving_steps": 142,
+   "sectors": 3,
+   "depth_s": 12.5,
+   "pressed_s": 10.4,
+   "credit": 0.009,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "basic",
+  "probe": "stardab",
+  "task_py": {
+   "circles": 0.25,
+   "share": 0.83,
+   "credit": 0.0,
+   "sectors": 12,
+   "depth_steps": 288,
+   "contact_steps": 240,
+   "moving_steps": 0,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 0.0,
+   "travel_turns": 0.25,
+   "share": 0.87,
+   "moving_s": 0.05,
+   "moving_steps": 1,
+   "sectors": 12,
+   "depth_s": 14.4,
+   "pressed_s": 12.5,
+   "credit": 0.0,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "basic",
+  "probe": "pingpong",
+  "task_py": {
+   "circles": 0.0,
+   "share": 1.0,
+   "credit": 0.0,
+   "sectors": 2,
+   "depth_steps": 220,
+   "contact_steps": 220,
+   "moving_steps": 0,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 0.0,
+   "travel_turns": 0.0,
+   "share": 1.0,
+   "moving_s": 0.0,
+   "moving_steps": 0,
+   "sectors": 4,
+   "depth_s": 11.0,
+   "pressed_s": 11.0,
+   "credit": 0.0,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "basic",
+  "probe": "pingpong_noisy",
+  "task_py": {
+   "circles": 0.0,
+   "share": 1.0,
+   "credit": 0.0,
+   "sectors": 5,
+   "depth_steps": 220,
+   "contact_steps": 220,
+   "moving_steps": 0,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 0.0,
+   "travel_turns": 0.0,
+   "share": 1.0,
+   "moving_s": 0.0,
+   "moving_steps": 0,
+   "sectors": 8,
+   "depth_s": 11.0,
+   "pressed_s": 11.0,
+   "credit": 0.0,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "basic",
+  "probe": "pingpong_long",
+  "task_py": {
+   "circles": 0.0,
+   "share": 1.0,
+   "credit": 0.0,
+   "sectors": 5,
+   "depth_steps": 220,
+   "contact_steps": 220,
+   "moving_steps": 0,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 0.0,
+   "travel_turns": 0.0,
+   "share": 1.0,
+   "moving_s": 0.0,
+   "moving_steps": 0,
+   "sectors": 7,
+   "depth_s": 11.0,
+   "pressed_s": 11.0,
+   "credit": 0.0,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "basic",
+  "probe": "wedged_axis",
+  "task_py": {
+   "circles": 0.0,
+   "share": 1.0,
+   "credit": 0.0,
+   "sectors": 0,
+   "depth_steps": 320,
+   "contact_steps": 320,
+   "moving_steps": 0,
+   "f_median": 1.5,
+   "f_max": 1.5,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 0.0,
+   "travel_turns": 0.0,
+   "share": 0.0,
+   "moving_s": 0.0,
+   "moving_steps": 0,
+   "sectors": 0,
+   "depth_s": 16.0,
+   "pressed_s": 0.0,
+   "credit": 0.0,
+   "f_median": 0.0,
+   "f_max": 0.0,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "basic",
+  "probe": "wedged_noise",
+  "task_py": {
+   "circles": 0.08,
+   "share": 0.52,
+   "credit": 0.001,
+   "sectors": 2,
+   "depth_steps": 320,
+   "contact_steps": 167,
+   "moving_steps": 76,
+   "f_median": 0.4,
+   "f_max": 0.4,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 0.25,
+   "travel_turns": 0.03,
+   "share": 0.52,
+   "moving_s": 2.65,
+   "moving_steps": 53,
+   "sectors": 4,
+   "depth_s": 16.0,
+   "pressed_s": 8.35,
+   "credit": 0.005,
+   "f_median": 0.43,
+   "f_max": 0.43,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "exploit",
+  "probe": "good 5c/16s",
+  "task_py": {
+   "circles": 5.33,
+   "share": 1.0,
+   "credit": 1.0,
+   "sectors": 12,
+   "depth_steps": 320,
+   "contact_steps": 320,
+   "moving_steps": 319,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 5.5,
+   "travel_turns": 5.03,
+   "share": 1.0,
+   "moving_s": 15.95,
+   "moving_steps": 319,
+   "sectors": 12,
+   "depth_s": 16.0,
+   "pressed_s": 16.0,
+   "credit": 1.0,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "exploit",
+  "probe": "reversal 2CW+2CCW",
+  "task_py": {
+   "circles": 4.17,
+   "share": 1.0,
+   "credit": 1.0,
+   "sectors": 12,
+   "depth_steps": 320,
+   "contact_steps": 320,
+   "moving_steps": 319,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 4.25,
+   "travel_turns": -0.03,
+   "share": 1.0,
+   "moving_s": 15.65,
+   "moving_steps": 313,
+   "sectors": 12,
+   "depth_s": 16.0,
+   "pressed_s": 16.0,
+   "credit": 1.0,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "exploit",
+  "probe": "demo-like stick.15 drop.12",
+  "task_py": {
+   "circles": 6.58,
+   "share": 0.9,
+   "credit": 1.0,
+   "sectors": 12,
+   "depth_steps": 312,
+   "contact_steps": 280,
+   "moving_steps": 215,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 6.83,
+   "travel_turns": 6.06,
+   "share": 0.92,
+   "moving_s": 11.05,
+   "moving_steps": 221,
+   "sectors": 12,
+   "depth_s": 15.6,
+   "pressed_s": 14.4,
+   "credit": 1.0,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "exploit",
+  "probe": "demo-like stick.25 drop.15",
+  "task_py": {
+   "circles": 6.67,
+   "share": 0.87,
+   "credit": 0.915,
+   "sectors": 12,
+   "depth_steps": 312,
+   "contact_steps": 272,
+   "moving_steps": 183,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 6.75,
+   "travel_turns": 6.15,
+   "share": 0.9,
+   "moving_s": 9.25,
+   "moving_steps": 185,
+   "sectors": 12,
+   "depth_s": 15.6,
+   "pressed_s": 14.05,
+   "credit": 0.925,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "exploit",
+  "probe": "ratchet one spot",
+  "task_py": {
+   "circles": 0.08,
+   "share": 0.8,
+   "credit": 0.002,
+   "sectors": 1,
+   "depth_steps": 250,
+   "contact_steps": 200,
+   "moving_steps": 150,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 0.17,
+   "travel_turns": 0.14,
+   "share": 0.83,
+   "moving_s": 7.1,
+   "moving_steps": 142,
+   "sectors": 3,
+   "depth_s": 12.5,
+   "pressed_s": 10.4,
+   "credit": 0.009,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "exploit",
+  "probe": "ratchet + 1 circle",
+  "task_py": {
+   "circles": 1.0,
+   "share": 0.83,
+   "credit": 0.25,
+   "sectors": 12,
+   "depth_steps": 402,
+   "contact_steps": 332,
+   "moving_steps": 261,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 1.17,
+   "travel_turns": 1.04,
+   "share": 0.86,
+   "moving_s": 12.35,
+   "moving_steps": 247,
+   "sectors": 12,
+   "depth_s": 20.1,
+   "pressed_s": 17.3,
+   "credit": 0.292,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "exploit",
+  "probe": "ratchet + wedge sectors",
+  "task_py": {
+   "circles": 0.08,
+   "share": 0.81,
+   "credit": 0.002,
+   "sectors": 1,
+   "depth_steps": 362,
+   "contact_steps": 292,
+   "moving_steps": 210,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 0.17,
+   "travel_turns": 0.14,
+   "share": 0.81,
+   "moving_s": 10.0,
+   "moving_steps": 200,
+   "sectors": 3,
+   "depth_s": 18.1,
+   "pressed_s": 14.7,
+   "credit": 0.012,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "exploit",
+  "probe": "microdab star 6x2deg",
+  "task_py": {
+   "circles": 1.89,
+   "share": 0.86,
+   "credit": 0.472,
+   "sectors": 12,
+   "depth_steps": 420,
+   "contact_steps": 360,
+   "moving_steps": 300,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 0.08,
+   "travel_turns": 5.52,
+   "share": 0.9,
+   "moving_s": 15.05,
+   "moving_steps": 301,
+   "sectors": 12,
+   "depth_s": 21.0,
+   "pressed_s": 18.8,
+   "credit": 0.021,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "exploit",
+  "probe": "microdab star 6x1.2deg",
+  "task_py": {
+   "circles": 1.0,
+   "share": 0.86,
+   "credit": 0.25,
+   "sectors": 12,
+   "depth_steps": 336,
+   "contact_steps": 288,
+   "moving_steps": 240,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 0.0,
+   "travel_turns": 3.91,
+   "share": 0.9,
+   "moving_s": 9.55,
+   "moving_steps": 191,
+   "sectors": 12,
+   "depth_s": 16.8,
+   "pressed_s": 15.05,
+   "credit": 0.0,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "exploit",
+  "probe": "fast4 + wiggle",
+  "task_py": {
+   "circles": 4.08,
+   "share": 1.0,
+   "credit": 1.0,
+   "sectors": 10,
+   "depth_steps": 237,
+   "contact_steps": 237,
+   "moving_steps": 236,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 3.83,
+   "travel_turns": 3.87,
+   "share": 1.0,
+   "moving_s": 7.1,
+   "moving_steps": 142,
+   "sectors": 10,
+   "depth_s": 11.85,
+   "pressed_s": 11.85,
+   "credit": 0.68,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "exploit",
+  "probe": "fwd ratchet 3f/1b x80",
+  "task_py": {
+   "circles": 2.58,
+   "share": 0.75,
+   "credit": 0.517,
+   "sectors": 12,
+   "depth_steps": 320,
+   "contact_steps": 240,
+   "moving_steps": 160,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 2.67,
+   "travel_turns": 2.32,
+   "share": 0.82,
+   "moving_s": 8.8,
+   "moving_steps": 176,
+   "sectors": 12,
+   "depth_s": 16.0,
+   "pressed_s": 13.05,
+   "credit": 0.587,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "exploit",
+  "probe": "pingpong noisy",
+  "task_py": {
+   "circles": 0.0,
+   "share": 1.0,
+   "credit": 0.0,
+   "sectors": 5,
+   "depth_steps": 220,
+   "contact_steps": 220,
+   "moving_steps": 0,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 0.0,
+   "travel_turns": 0.0,
+   "share": 1.0,
+   "moving_s": 0.0,
+   "moving_steps": 0,
+   "sectors": 8,
+   "depth_s": 11.0,
+   "pressed_s": 11.0,
+   "credit": 0.0,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "exploit",
+  "probe": "wiggle +-30",
+  "task_py": {
+   "circles": 0.08,
+   "share": 1.0,
+   "credit": 0.004,
+   "sectors": 2,
+   "depth_steps": 320,
+   "contact_steps": 320,
+   "moving_steps": 319,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 0.25,
+   "travel_turns": 0.02,
+   "share": 1.0,
+   "moving_s": 7.55,
+   "moving_steps": 151,
+   "sectors": 4,
+   "depth_s": 16.0,
+   "pressed_s": 16.0,
+   "credit": 0.019,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "exploit",
+  "probe": "fast then still",
+  "task_py": {
+   "circles": 2.0,
+   "share": 1.0,
+   "credit": 0.008,
+   "sectors": 4,
+   "depth_steps": 207,
+   "contact_steps": 207,
+   "moving_steps": 8,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 0.08,
+   "travel_turns": -0.04,
+   "share": 1.0,
+   "moving_s": 0.05,
+   "moving_steps": 1,
+   "sectors": 5,
+   "depth_s": 10.35,
+   "pressed_s": 10.35,
+   "credit": 0.0,
+   "f_median": 1.0,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "exploit",
+  "probe": "wedged axis",
+  "task_py": {
+   "circles": 0.0,
+   "share": 1.0,
+   "credit": 0.0,
+   "sectors": 0,
+   "depth_steps": 320,
+   "contact_steps": 320,
+   "moving_steps": 0,
+   "f_median": 1.5,
+   "f_max": 1.5,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 0.0,
+   "travel_turns": 0.0,
+   "share": 0.0,
+   "moving_s": 0.0,
+   "moving_steps": 0,
+   "sectors": 0,
+   "depth_s": 16.0,
+   "pressed_s": 0.0,
+   "credit": 0.0,
+   "f_median": 0.0,
+   "f_max": 0.0,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "exploit",
+  "probe": "still",
+  "task_py": {
+   "circles": 0.0,
+   "share": 1.0,
+   "credit": 0.0,
+   "sectors": 1,
+   "depth_steps": 320,
+   "contact_steps": 320,
+   "moving_steps": 0,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 0.0,
+   "travel_turns": -0.0,
+   "share": 1.0,
+   "moving_s": 0.0,
+   "moving_steps": 0,
+   "sectors": 1,
+   "depth_s": 16.0,
+   "pressed_s": 16.0,
+   "credit": 0.0,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "exploit",
+  "probe": "light/no press",
+  "task_py": {
+   "circles": 0.0,
+   "share": 0.0,
+   "credit": 0.0,
+   "sectors": 0,
+   "depth_steps": 320,
+   "contact_steps": 0,
+   "moving_steps": 0,
+   "f_median": 0.0,
+   "f_max": 0.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 0.0,
+   "travel_turns": 0.0,
+   "share": 0.0,
+   "moving_s": 0.0,
+   "moving_steps": 0,
+   "sectors": 0,
+   "depth_s": 16.0,
+   "pressed_s": 0.0,
+   "credit": 0.0,
+   "f_median": 0.0,
+   "f_max": 0.0,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "gap",
+  "probe": "6 circles, unpressed 30 deg arc each lap",
+  "task_py": {
+   "circles": 6.42,
+   "share": 0.92,
+   "credit": 1.0,
+   "sectors": 12,
+   "depth_steps": 320,
+   "contact_steps": 294,
+   "moving_steps": 287,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 6.25,
+   "travel_turns": 6.02,
+   "share": 0.92,
+   "moving_s": 14.4,
+   "moving_steps": 288,
+   "sectors": 12,
+   "depth_s": 16.0,
+   "pressed_s": 14.75,
+   "credit": 1.0,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "gap",
+  "probe": "6 circles, unpressed 45 deg arc each lap",
+  "task_py": {
+   "circles": 5.85,
+   "share": 0.88,
+   "credit": 1.0,
+   "sectors": 11,
+   "depth_steps": 320,
+   "contact_steps": 280,
+   "moving_steps": 274,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 5.75,
+   "travel_turns": 5.82,
+   "share": 0.88,
+   "moving_s": 13.75,
+   "moving_steps": 275,
+   "sectors": 11,
+   "depth_s": 16.0,
+   "pressed_s": 14.05,
+   "credit": 1.0,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "gap",
+  "probe": "6 circles, unpressed 60 deg arc each lap",
+  "task_py": {
+   "circles": 5.98,
+   "share": 0.83,
+   "credit": 1.0,
+   "sectors": 11,
+   "depth_steps": 320,
+   "contact_steps": 266,
+   "moving_steps": 259,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 5.75,
+   "travel_turns": 6.02,
+   "share": 0.84,
+   "moving_s": 13.05,
+   "moving_steps": 261,
+   "sectors": 10,
+   "depth_s": 16.0,
+   "pressed_s": 13.4,
+   "credit": 1.0,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "gap",
+  "probe": "6 circles, unpressed 90 deg arc each lap",
+  "task_py": {
+   "circles": 4.37,
+   "share": 0.75,
+   "credit": 1.0,
+   "sectors": 10,
+   "depth_steps": 320,
+   "contact_steps": 240,
+   "moving_steps": 233,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 5.33,
+   "travel_turns": 5.77,
+   "share": 0.75,
+   "moving_s": 11.7,
+   "moving_steps": 234,
+   "sectors": 11,
+   "depth_s": 16.0,
+   "pressed_s": 12.05,
+   "credit": 1.0,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "gap",
+  "probe": "6 circles, unpressed 120 deg arc each lap",
+  "task_py": {
+   "circles": 3.84,
+   "share": 0.66,
+   "credit": 0.819,
+   "sectors": 9,
+   "depth_steps": 320,
+   "contact_steps": 212,
+   "moving_steps": 205,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 0.08,
+   "travel_turns": 3.9,
+   "share": 0.67,
+   "moving_s": 10.35,
+   "moving_steps": 207,
+   "sectors": 9,
+   "depth_s": 16.0,
+   "pressed_s": 10.7,
+   "credit": 0.018,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "friction",
+  "probe": "good 5c/16s, mu 0.8",
+  "task_py": {
+   "circles": 5.33,
+   "share": 1.0,
+   "credit": 1.0,
+   "sectors": 12,
+   "depth_steps": 320,
+   "contact_steps": 320,
+   "moving_steps": 319,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 5.5,
+   "travel_turns": 5.06,
+   "share": 1.0,
+   "moving_s": 15.95,
+   "moving_steps": 319,
+   "sectors": 12,
+   "depth_s": 16.0,
+   "pressed_s": 16.0,
+   "credit": 1.0,
+   "f_median": 1.28,
+   "f_max": 1.29,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "friction",
+  "probe": "demo-like stick.15 drop.12, mu 0.8",
+  "task_py": {
+   "circles": 6.58,
+   "share": 0.9,
+   "credit": 1.0,
+   "sectors": 12,
+   "depth_steps": 312,
+   "contact_steps": 280,
+   "moving_steps": 215,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 7.08,
+   "travel_turns": 6.06,
+   "share": 0.92,
+   "moving_s": 10.85,
+   "moving_steps": 217,
+   "sectors": 12,
+   "depth_s": 15.6,
+   "pressed_s": 14.4,
+   "credit": 1.0,
+   "f_median": 1.28,
+   "f_max": 1.28,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "friction",
+  "probe": "good 5c/16s, mu 1.0",
+  "task_py": {
+   "circles": 5.33,
+   "share": 1.0,
+   "credit": 1.0,
+   "sectors": 12,
+   "depth_steps": 320,
+   "contact_steps": 320,
+   "moving_steps": 319,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 5.5,
+   "travel_turns": 5.08,
+   "share": 1.0,
+   "moving_s": 15.95,
+   "moving_steps": 319,
+   "sectors": 12,
+   "depth_s": 16.0,
+   "pressed_s": 16.0,
+   "credit": 1.0,
+   "f_median": 1.41,
+   "f_max": 1.42,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "friction",
+  "probe": "demo-like stick.15 drop.12, mu 1.0",
+  "task_py": {
+   "circles": 6.58,
+   "share": 0.9,
+   "credit": 1.0,
+   "sectors": 12,
+   "depth_steps": 312,
+   "contact_steps": 280,
+   "moving_steps": 215,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 4.08,
+   "travel_turns": 5.0,
+   "share": 0.92,
+   "moving_s": 10.75,
+   "moving_steps": 215,
+   "sectors": 12,
+   "depth_s": 15.6,
+   "pressed_s": 14.4,
+   "credit": 1.0,
+   "f_median": 1.41,
+   "f_max": 1.42,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "void",
+  "probe": "5 circles + 1.0 N other contact from 8 s",
+  "task_py": {
+   "circles": 5.33,
+   "share": 1.0,
+   "credit": 1.0,
+   "sectors": 12,
+   "depth_steps": 320,
+   "contact_steps": 320,
+   "moving_steps": 319,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 2.17,
+   "travel_turns": 3.74,
+   "share": 0.95,
+   "moving_s": 14.95,
+   "moving_steps": 299,
+   "sectors": 12,
+   "depth_s": 16.0,
+   "pressed_s": 15.25,
+   "credit": 0.542,
+   "f_median": 1.08,
+   "f_max": 2.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": "void rule (video)"
+ },
+ {
+  "group": "void",
+  "probe": "  same, nostril voided (--void-nostril)",
+  "task_py": {
+   "circles": 5.33,
+   "share": 1.0,
+   "credit": 1.0,
+   "sectors": 12,
+   "depth_steps": 320,
+   "contact_steps": 320,
+   "moving_steps": 319,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 2.17,
+   "travel_turns": 3.74,
+   "share": 0.95,
+   "moving_s": 14.95,
+   "moving_steps": 299,
+   "sectors": 12,
+   "depth_s": 16.0,
+   "pressed_s": 15.25,
+   "credit": 0.0,
+   "f_median": 1.08,
+   "f_max": 2.08,
+   "too_hard": false,
+   "voided": true
+  },
+  "note": ""
+ },
+ {
+  "group": "void",
+  "probe": "tip free, shaft pressed on a rim 0.5 N, x5",
+  "task_py": {
+   "circles": 0.0,
+   "share": 0.0,
+   "credit": 0.0,
+   "sectors": 0,
+   "depth_steps": 320,
+   "contact_steps": 0,
+   "moving_steps": 0,
+   "f_median": 0.0,
+   "f_max": 0.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 5.42,
+   "travel_turns": 4.98,
+   "share": 1.0,
+   "moving_s": 15.95,
+   "moving_steps": 319,
+   "sectors": 12,
+   "depth_s": 16.0,
+   "pressed_s": 16.0,
+   "credit": 1.0,
+   "f_median": 0.5,
+   "f_max": 0.5,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": "void rule (video)"
+ },
+ {
+  "group": "refused",
+  "probe": "logged at 10 samples/s",
+  "task_py": null,
+  "real_log": {
+   "refused": "log rate below 80 samples/s (median interval 0.100 s): set both HX711 boards to 80 samples/s"
+  },
+  "note": ""
+ },
+ {
+  "group": "refused",
+  "probe": "raw counts (not calibrated)",
+  "task_py": null,
+  "real_log": {
+   "refused": "forces above 50 N: enter the calibration (COUNTS_PER_N_U/V) in force_logger.ino"
+  },
+  "note": ""
+ },
+ {
+  "group": "refused",
+  "probe": "0.3 N on the insert when the log starts",
+  "task_py": null,
+  "real_log": {
+   "refused": "the insert reads 0.300 N in the log's first second: start the log with nothing touching the nose and stop it 2 s after the swab is out; if the insert was knocked, repeat the in-place check"
+  },
+  "note": ""
+ },
+ {
+  "group": "refused",
+  "probe": "0.3 N left on the insert at the end",
+  "task_py": null,
+  "real_log": {
+   "refused": "the insert reads 0.301 N in the log's last second: start the log with nothing touching the nose and stop it 2 s after the swab is out; if the insert was knocked, repeat the in-place check"
+  },
+  "note": ""
+ },
+ {
+  "group": "clock",
+  "probe": "logger clock 0.5% slow, uncorrected",
+  "task_py": {
+   "circles": 5.33,
+   "share": 1.0,
+   "credit": 1.0,
+   "sectors": 12,
+   "depth_steps": 320,
+   "contact_steps": 320,
+   "moving_steps": 319,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 5.17,
+   "travel_turns": 4.75,
+   "share": 0.96,
+   "moving_s": 15.3,
+   "moving_steps": 306,
+   "sectors": 12,
+   "depth_s": 16.0,
+   "pressed_s": 15.35,
+   "credit": 1.0,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": "share 0.96, pressed 15.35 s"
+ },
+ {
+  "group": "clock",
+  "probe": "logger clock 0.5% slow, corrected (pc_s)",
+  "task_py": {
+   "circles": 5.33,
+   "share": 1.0,
+   "credit": 1.0,
+   "sectors": 12,
+   "depth_steps": 320,
+   "contact_steps": 320,
+   "moving_steps": 319,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 5.42,
+   "travel_turns": 5.02,
+   "share": 1.0,
+   "moving_s": 15.95,
+   "moving_steps": 319,
+   "sectors": 12,
+   "depth_s": 16.0,
+   "pressed_s": 16.0,
+   "credit": 1.0,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": "share 1.00, pressed 16.0 s"
+ },
+ {
+  "group": "phases",
+  "probe": "6 circles, unpressed 30 deg arc, 36 phases, mu 0.4",
+  "task_py": {
+   "credit": 1.0
+  },
+  "real_log": {
+   "credit": 1.0,
+   "median": 1.0,
+   "below_0_9": 0
+  },
+  "note": "real median 1.000, 0/36 phases below 0.9; task.py 1.000-1.000"
+ },
+ {
+  "group": "phases",
+  "probe": "6 circles, unpressed 30 deg arc, 36 phases, mu 0.8",
+  "task_py": {
+   "credit": 1.0
+  },
+  "real_log": {
+   "credit": 1.0,
+   "median": 1.0,
+   "below_0_9": 0
+  },
+  "note": "real median 1.000, 0/36 phases below 0.9; task.py 1.000-1.000"
+ },
+ {
+  "group": "phases",
+  "probe": "6 circles, unpressed 45 deg arc, 36 phases, mu 0.4",
+  "task_py": {
+   "credit": 1.0
+  },
+  "real_log": {
+   "credit": 1.0,
+   "median": 1.0,
+   "below_0_9": 0
+  },
+  "note": "real median 1.000, 0/36 phases below 0.9; task.py 1.000-1.000"
+ },
+ {
+  "group": "phases",
+  "probe": "6 circles, unpressed 45 deg arc, 36 phases, mu 0.8",
+  "task_py": {
+   "credit": 1.0
+  },
+  "real_log": {
+   "credit": 1.0,
+   "median": 1.0,
+   "below_0_9": 0
+  },
+  "note": "real median 1.000, 0/36 phases below 0.9; task.py 1.000-1.000"
+ },
+ {
+  "group": "phases",
+  "probe": "6 circles, unpressed 60 deg arc, 36 phases, mu 0.4",
+  "task_py": {
+   "credit": 1.0
+  },
+  "real_log": {
+   "credit": 1.0,
+   "median": 1.0,
+   "below_0_9": 0
+  },
+  "note": "real median 1.000, 0/36 phases below 0.9; task.py 1.000-1.000"
+ },
+ {
+  "group": "phases",
+  "probe": "6 circles, unpressed 60 deg arc, 36 phases, mu 0.8",
+  "task_py": {
+   "credit": 1.0
+  },
+  "real_log": {
+   "credit": 0.062,
+   "median": 1.0,
+   "below_0_9": 4
+  },
+  "note": "real median 1.000, 4/36 phases below 0.9; task.py 1.000-1.000"
+ },
+ {
+  "group": "phases",
+  "probe": "6 circles, unpressed 75 deg arc, 36 phases, mu 0.4",
+  "task_py": {
+   "credit": 1.0
+  },
+  "real_log": {
+   "credit": 0.062,
+   "median": 1.0,
+   "below_0_9": 11
+  },
+  "note": "real median 1.000, 11/36 phases below 0.9; task.py 1.000-1.000"
+ },
+ {
+  "group": "phases",
+  "probe": "6 circles, unpressed 75 deg arc, 36 phases, mu 0.8",
+  "task_py": {
+   "credit": 1.0
+  },
+  "real_log": {
+   "credit": 0.037,
+   "median": 1.0,
+   "below_0_9": 14
+  },
+  "note": "real median 1.000, 14/36 phases below 0.9; task.py 1.000-1.000"
+ },
+ {
+  "group": "phases",
+  "probe": "6 circles, unpressed 90 deg arc, 36 phases, mu 0.4",
+  "task_py": {
+   "credit": 0.9
+  },
+  "real_log": {
+   "credit": 0.037,
+   "median": 0.188,
+   "below_0_9": 22
+  },
+  "note": "real median 0.188, 22/36 phases below 0.9; task.py 0.900-1.000"
+ },
+ {
+  "group": "phases",
+  "probe": "6 circles, unpressed 90 deg arc, 36 phases, mu 0.8",
+  "task_py": {
+   "credit": 0.9
+  },
+  "real_log": {
+   "credit": 0.019,
+   "median": 0.3025,
+   "below_0_9": 22
+  },
+  "note": "real median 0.302, 22/36 phases below 0.9; task.py 0.900-1.000"
+ },
+ {
+  "group": "dabs",
+  "probe": "microdab star 6x1.2deg, HX711 settling",
+  "task_py": {
+   "circles": 1.0,
+   "share": 0.86,
+   "credit": 0.25,
+   "sectors": 12,
+   "depth_steps": 336,
+   "contact_steps": 288,
+   "moving_steps": 240,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 0.0,
+   "travel_turns": 3.92,
+   "share": 1.0,
+   "moving_s": 10.35,
+   "moving_steps": 207,
+   "sectors": 12,
+   "depth_s": 16.8,
+   "pressed_s": 16.8,
+   "credit": 0.0,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "dabs",
+  "probe": "microdab star 6x1.2deg, steps half a step off",
+  "task_py": {
+   "circles": 1.0,
+   "share": 0.86,
+   "credit": 0.25,
+   "sectors": 12,
+   "depth_steps": 336,
+   "contact_steps": 288,
+   "moving_steps": 240,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 0.0,
+   "travel_turns": 3.9,
+   "share": 1.0,
+   "moving_s": 10.45,
+   "moving_steps": 209,
+   "sectors": 12,
+   "depth_s": 16.8,
+   "pressed_s": 16.75,
+   "credit": 0.0,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "dabs",
+  "probe": "microdab star 6x1.2deg, no lift",
+  "task_py": {
+   "circles": 4.25,
+   "share": 1.0,
+   "credit": 1.0,
+   "sectors": 12,
+   "depth_steps": 288,
+   "contact_steps": 288,
+   "moving_steps": 243,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 0.0,
+   "travel_turns": 3.31,
+   "share": 1.0,
+   "moving_s": 9.3,
+   "moving_steps": 186,
+   "sectors": 12,
+   "depth_s": 14.4,
+   "pressed_s": 14.4,
+   "credit": 0.0,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "dabs",
+  "probe": "microdab star 6x2deg, HX711 settling",
+  "task_py": {
+   "circles": 1.89,
+   "share": 0.86,
+   "credit": 0.472,
+   "sectors": 12,
+   "depth_steps": 420,
+   "contact_steps": 360,
+   "moving_steps": 300,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 0.08,
+   "travel_turns": 5.53,
+   "share": 1.0,
+   "moving_s": 16.1,
+   "moving_steps": 322,
+   "sectors": 12,
+   "depth_s": 21.0,
+   "pressed_s": 21.0,
+   "credit": 0.021,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "dabs",
+  "probe": "microdab star 6x2deg, steps half a step off",
+  "task_py": {
+   "circles": 1.89,
+   "share": 0.86,
+   "credit": 0.472,
+   "sectors": 12,
+   "depth_steps": 420,
+   "contact_steps": 360,
+   "moving_steps": 300,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 0.08,
+   "travel_turns": 5.51,
+   "share": 1.0,
+   "moving_s": 16.8,
+   "moving_steps": 336,
+   "sectors": 12,
+   "depth_s": 21.0,
+   "pressed_s": 20.95,
+   "credit": 0.021,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "dabs",
+  "probe": "microdab star 6x2deg, no lift",
+  "task_py": {
+   "circles": 5.33,
+   "share": 1.0,
+   "credit": 1.0,
+   "sectors": 12,
+   "depth_steps": 360,
+   "contact_steps": 360,
+   "moving_steps": 304,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 0.08,
+   "travel_turns": 4.41,
+   "share": 1.0,
+   "moving_s": 14.9,
+   "moving_steps": 298,
+   "sectors": 12,
+   "depth_s": 18.0,
+   "pressed_s": 18.0,
+   "credit": 0.021,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "dabs",
+  "probe": "120-degree hops, 6 x 2 deg, mu 0.4, HX711 False, offset 0.0",
+  "task_py": {
+   "circles": 1.67,
+   "share": 0.86,
+   "credit": 0.125,
+   "sectors": 3,
+   "depth_steps": 420,
+   "contact_steps": 360,
+   "moving_steps": 300,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 0.25,
+   "travel_turns": 11.6,
+   "share": 0.9,
+   "moving_s": 15.0,
+   "moving_steps": 300,
+   "sectors": 6,
+   "depth_s": 21.0,
+   "pressed_s": 18.8,
+   "credit": 0.037,
+   "f_median": 1.08,
+   "f_max": 1.08,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "dabs",
+  "probe": "120-degree hops, 6 x 2 deg, mu 0.8, HX711 True, offset 0.025",
+  "task_py": {
+   "circles": 1.67,
+   "share": 0.86,
+   "credit": 0.125,
+   "sectors": 3,
+   "depth_steps": 420,
+   "contact_steps": 360,
+   "moving_steps": 300,
+   "f_median": 1.0,
+   "f_max": 1.0,
+   "depth_max_mm": 12.5
+  },
+  "real_log": {
+   "circles": 2.5,
+   "travel_turns": 18.99,
+   "share": 0.88,
+   "moving_s": 15.6,
+   "moving_steps": 312,
+   "sectors": 9,
+   "depth_s": 21.0,
+   "pressed_s": 18.45,
+   "credit": 0.562,
+   "f_median": 1.27,
+   "f_max": 1.28,
+   "too_hard": false,
+   "voided": false
+  },
+  "note": ""
+ },
+ {
+  "group": "refused",
+  "probe": "at-depth interval 30 s after the log ends",
+  "task_py": null,
+  "real_log": {
+   "refused": "left interval 32.0-47.95 s is not inside the log (-0.04-19.45 s on the video's clock): check --sync and the interval times"
+  },
+  "note": ""
+ }
+]

@@ -141,7 +141,7 @@ kk.watch_points("swab", "head")
 kk.watch_points("swab", "kit")
 
 # -- scoring -------------------------------------------------------------------------------------------------------------
-F_WALL = 0.20  # N: the tip is pressed on the wall (about 20 g, the press the real trial's calibrated ink needs)
+F_WALL = 0.20  # N: the tip is pressed on the wall (about 20 g; real trials log it from load cells under the insert)
 F_STRAY = 0.05  # N: any tip contact elsewhere counts as a touch
 RIM = 0.008  # m: tip contacts up to this far outside a nostril's opening (on its rim) are not touches of the face
 DEPTH_MIN = TIP_LEN / 2  # m: tip centre this deep: the whole foam tip is inside the nostril
@@ -158,7 +158,7 @@ R_MIN = 0.25  # the tip centre's elliptical radius below which a pressed step's 
 TIP_TOUCH = 0.002  # m: a finger pad's face this close to the foam (tip outside the tube) touches it
 HOME_STEPS = 180  # steps (9 s): the cap stays home and let go this long before the swab counts as done
 MOVE_MIN = math.radians(1.0)  # a pressed step counts toward the 10 s only if the tip moved this far round the wall
-SECTORS = 10  # of the twelve 30-degree sectors pressed, as in the real trial's wiped-sector count
+SECTORS = 10  # of the twelve 30-degree sectors pressed (real trials: from the logged force's direction)
 TUBE_HOLD = 0.012  # m: a pad of the hand not on the cap this close to the tube's outside holds the tube
 _S: dict = {}
 
