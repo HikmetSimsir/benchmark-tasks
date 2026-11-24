@@ -105,20 +105,16 @@ task = {
         "least 0.05 N (the face, the lips, the tube's or stand's outside, the table); a finger pad comes within 2 mm "
         "of the foam while the tip is outside the tube; the tip's end goes deeper than 2.5 cm; or the swab is "
         "dropped (its cap's centre lower than 1.2 cm while not held and not in the tube). A wall force above 5 N is "
-        "reported, not scored. Real trial (README, real_trial/): the nose insert hangs on two load cells inside the "
-        "head that log the net side force on the nose 80 times a second, and real_trial/score_real_trial.py scores the "
-        "log with these numbers, share included, and six stated rule differences (real_trial/README.md): a 0.05 s step "
-        "is pressed at 0.2 N or more, the force's direction gives the tip's angle round the wall, and circles count as "
-        "laps, not signed travel (rubbing friction tilts the force about 22 degrees when a stroke starts or turns back): "
-        "all twelve sectors pressed, or 10 of them over a full turn of pressed travel; a turn of more than 60 degrees "
-        "between pressed steps starts a new lap, as a lift does. The log stands for the foam only while nothing else touches "
-        "the nose, so a gripper, the tube, a cable or the shaft bearing on a rim while a tip is at depth voids that "
-        "nostril. An overhead video gives the at-depth times (the line 1.6 cm from the tip's end past the opening's "
-        "rim, the 2.5 cm line outside), green marker on the foam, a gripper on it or the tip on the table (voided), and "
-        "the cap: flush "
-        "on the rim (photo), pushed while the other hand holds the tube, with the full push one cap needs (measured "
-        "on a kitchen scale before the trials). Logs slower than 80 samples/s, not in newtons or not at zero at both "
-        "ends are refused; one the robot left loaded or knocked off zero scores 0."),
+        "reported, not scored. Real trial (README, real_trial/): the nose insert hangs on two load cells logging the net side force on the nose"
+        " 80 times a second; real_trial/score_real_trial.py scores the log with these numbers, share included, and six "
+        "stated rule differences (real_trial/README.md): a 0.05 s step is pressed at 0.2 N or more, the force's direction"
+        " gives the tip's angle, and circles count as laps (all twelve sectors, or 10 over a full turn of pressed travel;"
+        " a turn over 60 degrees starts a new lap) because rubbing friction tilts the force about 22 degrees. Anything "
+        "but the foam touching the nose while a tip is at depth voids that nostril. An overhead video gives the at-depth "
+        "times (the 1.6 cm line past the rim, the 2.5 cm line outside), the voids (green on the foam, a gripper on it, "
+        "the tip on the table) and the cap (flush, pushed while the other hand holds the tube). Unusable logs are "
+        "refused."),
+
     "run_limit": "2,400 steps (2 minutes at 20 Hz)",
     "reset_notes": (
         "Nothing is consumed in simulation. Put the swab back in its tube with the cap in place as shipped, and the "
@@ -134,6 +130,7 @@ task = {
         "friction fit; the real cap needs its full push). Swab mass estimated."),
     "scores": scores,
 }
+assert len(task["scoring"]) <= 4000, len(task["scoring"])  # the submit bot refuses a longer scoring field
 assert len(task["title"]) <= 120 and len(task["context"]) <= 1000 and len(task["fidelity"]) <= 500, \
     (len(task["title"]), len(task["context"]), len(task["fidelity"]))
 try:  # keep the media ID that tools/upload_media.py wrote (the uploaded videos and screenshot still match)
